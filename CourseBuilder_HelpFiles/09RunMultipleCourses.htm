@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<!-- saved from url=(0247)file:///C:/Users/Mokter/Dropbox/Public/CourseBuilder/CourseBuilder_HelpFiles/09RunMultipleCourses%20-%20course-builder%20-%20Using%20one%20GAE%20instance%20to%20host%20multiple%20courses.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/course-builder/wiki/RunMultipleCourses">
+ 
+ <script type="text/javascript" async="" src="./09RunMultipleCourses_files/plusone.js" gapi_processed="true"></script><script src="./09RunMultipleCourses_files/cb=gapi.loaded_0" async=""></script><script src="./09RunMultipleCourses_files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" async="" src="./09RunMultipleCourses_files/plusone(1).js" gapi_processed="true"></script><script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = "kyMA9uVWbvv1tO5ff8fzPN0idTo:1396116956982";
+ 
+ 
+ var CS_env = {"projectHomeUrl": "/p/course-builder", "projectName": "course-builder", "profileUrl": "/u/114869294170070768630/", "domainName": null, "relativeBaseUrl": "", "loggedInUserEmail": "mokter@gmail.com", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/11512667522589661435", "token": "kyMA9uVWbvv1tO5ff8fzPN0idTo:1396116956982"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-34425937-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="./09RunMultipleCourses_files/ga.js"></script><script type="text/javascript" async="" src="./09RunMultipleCourses_files/ga(1).js"></script>
+ 
+ 
+ <title>RunMultipleCourses - 
+ course-builder -
+ 
+ Using one GAE instance to host multiple courses. - 
+ Course Builder - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./09RunMultipleCourses_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./09RunMultipleCourses_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/course-builder/gitchanges/basic?path=/RunMultipleCourses.wiki&repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/11512667522589661435/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#" id="multilogin-dropdown" onclick="return false;"><u><b>mokter@gmail.com</b></u> <small>▼</small></a>
+ 
+ 
+ | <a href="https://code.google.com/u/114869294170070768630/" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://code.google.com/u/114869294170070768630/" onclick="_CS_click(&#39;/gb/ph/profile&#39;);" title="Profile, Updates, and Settings"><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FRunMultipleCourses" onclick="_CS_click(&#39;/gb/ph/signout&#39;);"><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/course-builder">
+ <a href="https://code.google.com/p/course-builder/">
+ 
+ <img src="./09RunMultipleCourses_files/defaultlogo.png" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/course-builder/"><span itemprop="name">course-builder</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/course-builder/"><span itemprop="description">Course Builder</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/course-builder/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/DownloadCourseBuilder?tm=2" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist?tm=6" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/issues/list" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/course-builder/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5">&nbsp;My starred pages</option>
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off"></span>
+ 
+ 
+ 
+ <input type="submit" value="Search">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol" style="padding:0 3px 3px 0; margin:0">
+
+ 
+
+
+
+
+
+
+ 
+<style type="text/css">
+ #wikimaincol { padding-top: 6px; padding-left:1em}
+ #sidebarcontainer {
+ padding: 1.5em 2px 2px 2px;
+ min-width: 15em;
+ max-width: 20em;
+ overflow:hidden;
+}
+ .sidebartop ul { margin:0 0 0 .5em; padding-left:0 !important; list-style:none}
+ .sidebartop ul ul { margin-left:1em; padding-left:0; list-style:none; display:none}
+ .sidebartop li { margin:0 0 2px 0; padding:1px; padding-left:14px; cursor:pointer}
+ .sidebartop li a { padding:2px}
+ .sidebartop li { background: url(https://ssl.gstatic.com/codesite/ph/images/plus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeopen { background: url(https://ssl.gstatic.com/codesite/ph/images/minus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeleaf { background:none}
+ .currentpagelink { 
+ font-weight: bold;
+ text-decoration: none;
+ color: black !important; 
+ background: #c3d9ff;
+ }
+ .sidebartop ul.treeleafcontainer { display:block;}
+ .sidebarcontent { 
+ vertical-align:top;
+ padding-right: 3px;
+ border-right: 2px solid #ccc;
+ }
+</style>
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td class="sidebarcontent">
+ <div class="vt expand" id="wikisidebar">
+ <div>
+ 
+ <div style="float:right;">
+ <a class="ifExpand" style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#" onclick="_DW_toggleSidebar(this); return false;" title="Hide sidebar"><b>‹‹</b></a>
+ </div>
+ <div class="ifCollapse" style="padding:0 2px">
+ <a style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#" onclick="_DW_toggleSidebar(this); return false;" title="Show sidebar"><b>››</b></a>
+ </div>
+ 
+ 
+ <div id="sidebarcontainer" class="sidebartop ifExpand">
+ <ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist">Course Builder Checklists</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CBRoles">Course Builder Roles</a> </li><li>Technologists   </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/GetStarted">Get Started</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Download">Download the Software</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/GetCode">Run Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExplorePS">Explore Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/UploadCode">Deploy Course Builder</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/ImplementCourseMaterial">Implement Course Material</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseSettings">Customize Course Settings</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Accessibility">Accessibility</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/I18n">Internationalization</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Dashboard">Dashboard</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateRegistration">Modify Registration</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateLessons">Create Lessons and Activities</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateAssessments">Create Assessments</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PeerReview">Peer Review</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/DeployAgain">Deploy Again</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AdminPage">Administrator Page</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateNewCourse">Create New Courses</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/URLMap">URL Mapping</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Security">Security</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AppEngine">Develop with Google App Engine</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExportCourseData">Download Course Data</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ImportCourseData">Upload Course Data</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Upgrade">Upgrade Course Builder</a> </li></ul><li>Course Authors </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/WhatsInACourse">Parts of a Course Builder Course</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseFlow">Course Flow for Students</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/DesignProcess">Design Process</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PSHistory">About the Power Searching Experiment</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/OnePlan">Plan Before You Start</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/TwoDevelop">Develop the Content without Technology</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ObjectivesToOutline">From Objectives to Outline</a> </li></ul></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/WorkWithVideo">Work with Video</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/ThreeImplement">Implement the Course with Technology</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/FourPilot">Pilot with Your Target Audience</a> </li></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/ManageCommunity">Set up &amp; Manage Community</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/Announcements">Announcements &amp; Optional Material</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/WebForums">Community Discussion</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CreateEmailList">Announcements-only Email List</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/UpdateAnnouncementsTab">Update Announcements Tab</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleEmails">Example Emails</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/OnlineOfficeHours">Online Office Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/TeachingAssistants">Teaching Assistants</a> </li><li><a href="https://docs.google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE" rel="nofollow">Example Event Timeline &amp; TA Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleTAEssentialsDoc">Example TA Essentials Doc</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CommunityToolsComparison">Tools Comparison</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/MeasureEfficacy">Evaluate Course Efficacy</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/AssessmentMetrics">Student Assessments</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ReachAndEngagementMetrics">Reach &amp; Engagement</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleReachEngagementMetrics">Example Reach &amp; Engagement Data</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/HappinessMetrics">Student Happiness</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleSurvey">Example Post-Course Survey</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/AnalyticsForEdu">Combine Assessment &amp; Reach Data</a> </li></ul></ul></ul><li class="treeopen">Developers </li><ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExploreCode">Explore Directories</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ModifyTemplate">Modify Course Template</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCB">Customize Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCoursePages">Customize Course Pages</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateComponents">Create Components</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateModules">Create Modules</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CustomJob">Create Custom Jobs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ListOfModulesExtensions">List of Modules and Extensions</a> </li><li class="treeleaf"><a href="file:///C:/Users/Mokter/Dropbox/Public/CourseBuilder/CourseBuilder_HelpFiles/09RunMultipleCourses%20-%20course-builder%20-%20Using%20one%20GAE%20instance%20to%20host%20multiple%20courses.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting_files/09RunMultipleCourses%20-%20course-builder%20-%20Using%20one%20GAE%20instance%20to%20host%20multiple%20courses.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting.htm" class="currentpagelink">Arrange Courses on Disk</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ReleaseNotes">Release Notes</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/FAQ">FAQ</a> </li></ul><p></p><table class="wikitable"><tbody><tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum" rel="nofollow">Discussion forum</a> </td></tr> </tbody></table><p></p>
+ </div>
+ </div>
+</div>
+
+ </td>
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <img width="15" height="15" id="star_img" src="./09RunMultipleCourses_files/star_off.gif" style="cursor:pointer" onclick="_CS_toggleStar(this,
+ {&#39;scope&#39;: &#39;wiki&#39;,
+ &#39;user&#39;: &#39;_CURRENT_USER&#39;,
+ &#39;item&#39;: &#39;course-builder:RunMultipleCourses&#39;
+ });">
+ 
+ <span style="font-size:120%;font-weight:bold">RunMultipleCourses</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Using one GAE instance to host multiple courses.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Fri Mar 28 13:05:11 2014">
+ Yesterday (22 hours ago)</span>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p></p><h1>Arrange Multiple Courses on Disk</h1> Course Builder supports multitenancy. You should create and run all your courses through the <a href="https://code.google.com/p/course-builder/wiki/CreateNewCourse">Admin page</a>. This page discusses staging your multiple courses on disk before deploying to Google App Engine. This method is for older Course Builder versions (before 1.3.0) or those who are creating their course(s) on disk  <p></p><p></p><ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#1._Make_sure_the_courses_can_be_run_on_the_same_instance.">1. Make sure the courses can be run on the same instance.</a></li><li><a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#2._Create_or_copy_unshared_files_to_appropriate_directories.">2. Create or copy unshared files to appropriate directories.</a></li><li><a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#3._Let_Course_Builder_know_about_the_multiple_courses.">3. Let Course Builder know about the multiple courses.</a></li><li><a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#4._(Only_for_CB_1.0_applications)_Modify_each_course's_view">4. (Only for CB 1.0 applications) Modify each course's views to use relative URLs.</a></li></ul></ul> <p></p><h2><a name="1._Make_sure_the_courses_can_be_run_on_the_same_instance."></a>1. Make sure the courses can be run on the same instance.<a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#1._Make_sure_the_courses_can_be_run_on_the_same_instance." class="section_anchor"></a></h2><p>When you host multiple courses in one instance, all of those courses must share most of their code.  </p><p>Specifically, assume that <i><strong><tt>APPPATH</tt></strong></i> is the directory containing Course Builder. Multiple courses that run in one GAE instance must share all files and code except what is in the <i><strong><tt>APPPATH</tt></strong></i><tt>/assets</tt>, <i><strong><tt>APPPATH</tt></strong></i><tt>/data</tt>, and <i><strong><tt>APPPATH</tt></strong></i><tt>/views</tt> directories. </p><p>If you have existing courses that you want to consolidate into one instance, first check that they share the correct code. If this is not the case, stop here. You cannot host the courses on the same instance. </p><h2><a name="2._Create_or_copy_unshared_files_to_appropriate_directories."></a>2. Create or copy unshared files to appropriate directories.<a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#2._Create_or_copy_unshared_files_to_appropriate_directories." class="section_anchor"></a></h2><p>Instead of using the top-level <tt>assets</tt>, <tt>data</tt>, and <tt>views</tt> directories, when multiple courses share an instance, they use a new top-level directory,  <i><strong><tt>APPPATH</tt></strong></i><tt>/courses</tt>. </p><p>This directory contains a separate subdirectory for each course. Each of <i>those</i> subdirectories contains <tt>assets</tt>, <tt>data</tt>, and <tt>views</tt> directories and the <tt>course.yaml</tt> file for that one course. </p><p>For example, assume that you have two courses, Algebra and Calculus. You would have files and directories such as the following: </p><blockquote><i><strong><tt>APPPATH</tt></strong></i><tt>/app.yaml</tt> <br> 
+<tt>...</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/algebra/</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/algebra/course.yaml</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/algebra/assets/...</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/algebra/data/...</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/algebra/views/...</tt> <br> 
+<tt>...</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/calculus/</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/calculus/course.yaml</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/calculus/assets/...</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/calculus/data/...</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/courses/calculus/views/...</tt> <br> 
+<tt>...</tt> <br> 
+<i><strong><tt>APPPATH</tt></strong></i><tt>/models/models.py</tt> <br> 
+<tt>...</tt> 
+</blockquote><p>All files and directories outside of <i><strong><tt>APPPATH</tt></strong></i><tt>/assets</tt>, <i><strong><tt>APPPATH</tt></strong></i><tt>/data</tt>, and <i><strong><tt>APPPATH</tt></strong></i><tt>/views</tt> remain the same. </p><p>If you consolidate existing courses, make a copy of one entire <i><strong><tt>APPPATH</tt></strong></i> tree. Move the top-level <tt>assets</tt>, <tt>data</tt>, and <tt>views</tt> directories and <tt>course.yaml</tt> files in that copy into an appropriately named subdirectory for that course. Then create other subdirectories for your other courses and copy their <tt>assets</tt>, <tt>data</tt>, and <tt>views</tt> directories and <tt>course.yaml</tt> files into the new tree. </p><h2><a name="3._Let_Course_Builder_know_about_the_multiple_courses."></a>3. Let Course Builder know about the multiple courses.<a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#3._Let_Course_Builder_know_about_the_multiple_courses." class="section_anchor"></a></h2><h3><a name="Add_URL_routing"></a>Add URL routing<a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#Add_URL_routing" class="section_anchor"></a></h3><p>Once you have your files in the appropriate directory structure, you need to configure Course Builder to know where to find the courses and what URLs to use to refer to them. You do this by setting  the <tt>GCB_COURSES_CONFIG</tt> environment variable in <i><strong><tt>APPPATH</tt></strong></i><tt>/app.yaml</tt>. </p><p>In our example, assume that you plan to use <tt>http://www.example.com/index.html</tt> as the home page that lists all of your courses, <tt>http://www.example.com/algebra101</tt> for the Algebra course, and <tt>http://www.example.com/calculus202</tt> for the Calculus course. In this situation, you would add the following section to <tt>app.yaml</tt>. </p><pre class="prettyprint"><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br>env_variables</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"><br>&nbsp; GCB_COURSES_CONFIG</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'course:/algebra101:/courses/algebra, course:/calculus202:/courses/calculus'</span></span><span class="pln"><span class="pln"><br></span></span><span class="pun"><span class="pun">...</span></span></pre><p><tt>GCB_COURSES_CONFIG</tt> is a comma-separated list of rules. Each rule has three parts, separated by colons:  </p><ul><li><strong>Type of entry.</strong><br>Every rule must start with the word <tt>course</tt>. (This allows for future expansion of configuration rules.) </li></ul><ul><li><strong>URL prefix.</strong><br>Specifies the URL to use for this portion of the site. In the example, the home page is accessible as <tt>http://www.example.com/</tt> and the second unit of the Algebra course is accessible as <tt>http://www.example.com/algebra101/unit?unit=2</tt>. </li></ul><ul><li><strong>File system location for course files.</strong><br>Specifies where to find the files associated with each course. In the example, the views files for Algebra 101 are stored under <i><strong><tt>APPPATH</tt></strong></i><tt>/courses/algebra/views/</tt>.  </li></ul><h3><a name="GAE_namespaces"></a>GAE namespaces<a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#GAE_namespaces" class="section_anchor"></a></h3><p>When you run multiple courses in a single GAE instance, Course Builder needs a way to separate information that belongs to different courses. For example, each of your courses has a Unit 1. Course Builder needs to know which information corresponds to Unit 1 in Algebra 101 and which corresponds to Unit 1 in Calculus 202. For this purpose, it uses GAE <i>namespaces</i>. A namespace is a method for disambiguating collections of information. </p><p>All of your courses run in a single GAE instance, but each course runs in separate namespace. Course Builder creates the name of the namespace using the course's file system location. Course Builder replaces slashes in the location with dashes and gives the namespace a prefix of <tt>gcb-</tt>. So in the example, the Algebra course uses the namespace name <tt>gcb-courses-algebra</tt>, based on its file system location of <tt>/courses/algebra</tt>. </p><h2><a name="4._(Only_for_CB_1.0_applications)_Modify_each_course&#39;s_view"></a>4. (Only for CB 1.0 applications) Modify each course's views to use relative URLs.<a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses#4._(Only_for_CB_1.0_applications)_Modify_each_course's_view" class="section_anchor"></a></h2><p>If you originally developed your courses using Course Builder 1.0, there's a final step involved to run multiple courses from the same application instance. This step does not apply if you originally developed your courses with Course Builder 1.1. </p><p>In Course Builder 1.0, by default, many of the files in <tt>views/</tt> referred to other Course Builder files using <i>absolute</i> URLs.  An absolute URL starts with <tt>http://</tt>,  <tt>https://</tt>, or  <tt>/</tt>. For example, <tt>http://www.example.com/index.html</tt> and  <tt>/index.html</tt> are absolute URLs. A URL that does not start with <tt>http://</tt>,  <tt>https://</tt>, or  <tt>/</tt> is a <i>relative</i> URL; for example, <tt>index.html</tt> is a relative URL. An absolute URL describes precisely where the page lives, in "absolute" terms. A relative URL describes where the page lives, relative to the current directory. For example, in CB 1.0 <tt>views/base.html</tt> contained the following line: </p><blockquote><tt>&lt;link href="/assets/css/main.css" rel="stylesheet" type="text/css"&gt;</tt> 
+</blockquote><p>When you run Course Builder for only one application, <tt>/assets/css/main.css</tt> refers to <i><strong><tt>APPPATH</tt></strong></i><tt>/assets/css/main.css</tt>. When you run it for multiple applications, what <tt>/assets/css/main.css</tt> refers to depends on the routing defined by <tt>GCB_COURSES_CONFIG</tt>. </p><p>To fix the URLs, first add the <tt>base</tt> tag to <tt>views/base.html</tt> and <tt>views/base_registration.html</tt>. Add the following line to both of those files, as the first line in the <tt>&lt;head&gt;</tt> section.  </p><blockquote><tt> &lt;base href="{{ gcb_course_base }}" /&gt; </tt> 
+</blockquote><p>This tag tells the browser where to start looking for relative URLs. </p><p>Next, check all URLs in your Course Builder 1.0 courses to make sure they're ok.  </p><ul><li>Absolute URLs that start with either <tt>http://</tt> or <tt>https://</tt> do not change.  </li><li>Absolute URLs that start with <tt>/</tt> (slash) probably become relative. In most cases, you change URLs pointing to files that live in a <tt>views</tt> directory. In these situations, you can simply remove the initial <tt>/</tt>. For example, change <tt>/assets/css/main.css</tt> to  <tt>assets/css/main.css</tt>.  </li></ul>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/course-builder/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="create_time" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="pagename" value="RunMultipleCourses">
+ <input type="hidden" name="token" value="kyMA9uVWbvv1tO5ff8fzPN0idTo:1396116956982">
+ </form>
+
+
+ <script src="./09RunMultipleCourses_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./09RunMultipleCourses_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./09RunMultipleCourses_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./09RunMultipleCourses_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><b class="categoryTitle projects" style="display: block;">Projects</b><div class="menuCategory projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><b class="categoryTitle starred_projects" style="display: block;">Starred projects</b><div class="menuCategory starred_projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="https://code.google.com/hosting/" style="display: block;">Find open source projects...</a><a class="menuItem" href="https://code.google.com/hosting/createProject" style="display: block;">Create a project...</a></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"><span class="menuText" style="display: block;"><b>mokter@gmail.com</b></span></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="http://www.google.com/accounts/AddSession?service=code&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FRunMultipleCourses" style="display: block;"><nobr>Sign in with another account...</nobr></a></div></div><div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"></div></div></body></html>

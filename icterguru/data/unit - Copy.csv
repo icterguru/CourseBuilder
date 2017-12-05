@@ -1,0 +1,13 @@
+id,type,unit_id,title,release_date,now_available
+1,A,Pre,Pre-course assessment,,True
+2,U,1,Introduction,available July 10,True
+3,U,2,Design Patterns,available July 11,True
+4,U,3,Creational Design Patterns,available July 12,True
+5,U,4,Structural Design Patterns,available July 17,True
+6,A,Mid,Mid-course Assessment,,True
+7,U,5,Behavioral Design Patterns,available July 18,True
+8,U,6,Putting it all together,available July 19,True
+9,A,ReviewAssessmentExample,Sample peer review assignment,,True
+10,A,Fin,Post-course Assessment,,True
+11,O,http://www.youtube.com/watch?feature=player_embedded&v=ti4ndjzWBZM, The World Wide Web is now 25 years old,,True
+12,O,http://www.youtube.com/watch?feature=player_embedded&v=ti4ndjzWBZM, Experts say the advent of the internet technology significantly changed people's lives,,True

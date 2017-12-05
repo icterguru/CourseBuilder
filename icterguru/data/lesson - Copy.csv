@@ -1,0 +1,42 @@
+unit_id,unit_title,lesson_id,lesson_title,lesson_activity,lesson_activity_name,lesson_notes,lesson_video_id,lesson_objectives
+1,Introduction,1,Software Design Patterns,,,//en.wikipedia.org/wiki/Software_design_pattern,EOkyQCQkmXs,
+1,Introduction,2,Design Pattern Video Tutorial,yes,Lesson 1.2 Activity,//gray.cs.ua.edu/,vNHpsC5ng_E,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+1,Introduction,3,Design Pattern Video Tutorial-2,yes,Lesson 1.3 Activity,//www.google.com/,yRJ1rRoMnIM,"<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>"
+1,Introduction,4,Software Design Patterns-From the Wikipedia,yes,Lesson 1.4 Activity,//en.wikipedia.org/wiki/Software_design_pattern,EOkyQCQkmXs,"<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>"
+1,Introduction,5,Learning JavaScript Design Patterns,yes,Lesson 1.5 Activity,//www.addyosmani.com/resources/essentialjsdesignpatterns/book/,6EGZGHM0dCI,"<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>"
+
+2,Design Patterns,1,Categories of Software Design Patterns:Wikipedia,yes,Lesson 2.1 Activity,//http://en.wikipedia.org/wiki/Category:Software_design_patterns,EOkyQCQkmXs,"<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>"
+2,Design Patterns,2,Creational Design Patterns,yes,Lesson 2.2 Activity,//www.youtube.com/results?search_query=Creational+design+patterns,xnse8zeP8PM,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+2,Design Patterns,3,Structural Design Patterns,yes,Lesson 2.3 Activity,//www.youtube.com/results?search_query=Structural+design+patterns,PLmCsXDGbJHdiG7Ci8q_D5sTwh5vgD-X5Z,"<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>"
+2,Design Patterns,4,Behavioral Design Patterns,yes,Lesson 2.4 Activity,//www.youtube.com/results?search_query=Behavioral+design+patterns,kiTDR0YoIqA,"<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>"
+
+3,Creational Design Patterns,1,Abstract Factory Design Pattern,yes,Lesson 3.1 Activity,//gray.cs.ua.edu/,xbjAsdAK4xQ,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+3,Creational Design Patterns,2,Builder Design Pattern,yes,Lesson 3.2 Activity,//gray.cs.ua.edu/,9XnsOpjclUg,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+3,Creational Design Patterns,3,Factory Method Design Pattern,yes,Lesson 3.3 Activity,//gray.cs.ua.edu/,ub0DXaeV6hA,<ul><li>Use the minus sign to eliminate irrelevant results.</li></ul>
+3,Creational Design Patterns,4,Prototype Design Pattern,yes,Lesson 3.4 Activity,//gray.cs.ua.edu/,AFbZhRL0Uz8,<ul><li>Use quotes to search for a phrase.</li><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+3,Creational Design Patterns,5,Singleton Design Pattern,,,//gray.cs.ua.edu/,NZaXM67fxbs,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+
+4,Structural Design Patterns,1,Adapter Design Pattern,yes,Lesson 4.1 Activity,//gray.cs.ua.edu/,qG286LQM6BU,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+4,Structural Design Patterns,2,Bridge Design Pattern,yes,Lesson 4.2 Activity,//gray.cs.ua.edu/,9jIgSsIfh_8,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+4,Structural Design Patterns,3,Composite Design Pattern,yes,Lesson 4.3 Activity,//gray.cs.ua.edu/,2HUnoKyC9l0,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+4,Structural Design Patterns,4,Decorator Design Pattern,yes,Lesson 4.4 Activity,//gray.cs.ua.edu/,j40kRwSm4VE,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+4,Structural Design Patterns,5,Façade Design Pattern,yes,Lesson 4.5 Activity,//gray.cs.ua.edu/,B1Y8fcYrz5o,"<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>"
+4,Structural Design Patterns,6,Flyweight Design Pattern,yes,Lesson 4.6 Activity,//gray.cs.ua.edu/,0vV-R2926ss,"<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>"
+4,Structural Design Patterns,7,Proxy Design Pattern,yes,Lesson 4.7 Activity,//gray.cs.ua.edu/,cHg5bWW4nUI,"<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>"
+
+
+5,Behavioral Design Patterns,1,Chain of Responsibility Design Pattern,yes,Lesson 5.1 Activity,//gray.cs.ua.edu/,jDX6x8qmjbA,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,2,Command Design Pattern,yes,Lesson 5.2 Activity,//gray.cs.ua.edu/,7Pj5kAhVBlg,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,3,Interpretor Design Pattern,yes,Lesson 5.3 Activity,//gray.cs.ua.edu/,6CVymSJQuJE,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,4,Iterator Design Pattern,yes,Lesson 5.4 Activity,//www.newthinktank.com/2012/10/iterator-design-pattern-tutorial/,VKIzUuMdmag,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,5,Mediator Design Pattern,yes,Lesson 5.5 Activity,//gray.cs.ua.edu/,8DxIpdKd41A,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,6,Memento Design Pattern,yes,Lesson 5.6 Activity,//gray.cs.ua.edu/,jOnxYT8Iaoo,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,7,Observer Design Pattern,yes,Lesson 5.7 Activity,//gray.cs.ua.edu/,wiQdrH2YpT4,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,8,State Design Pattern,yes,Lesson 5.8 Activity,//gray.cs.ua.edu/,MGEx35FjBuo,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,9,Strategy Design Pattern,yes,Lesson 5.9 Activity,//gray.cs.ua.edu/,-NCgRD9-C6o,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,10,Template Method Design Pattern,yes,Lesson 5.10 Activity,//gray.cs.ua.edu/,aR1B8MlwbRI,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+5,Behavioral Design Patterns,11,Visitor Design Pattern,yes,Lesson 5.11 Activity,//gray.cs.ua.edu/,pL4mOUDi54o,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+
+6,Putting it all together,1,Combining methods,yes,Lesson 6.1 Activity,//gray.cs.ua.edu/,dO2vuIkFio4,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+6,Putting it all together,2,Think broadly,yes,Lesson 6.2 Activity,//www.google.com/,s7QZd1hEjS4,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>
+6,Putting it all together,3,Summary,yes,,//www.google.com/,XsGpoNOVOo4,<ul><li>Text of line-1...</li><li>Text of line-2...</li></ul>

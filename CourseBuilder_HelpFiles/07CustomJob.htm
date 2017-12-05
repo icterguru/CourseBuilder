@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!-- saved from url=(0219)file:///C:/Users/Mokter/Dropbox/Public/CourseBuilder/CourseBuilder_HelpFiles/07CustomJob%20-%20course-builder%20-%20Describes%20how%20to%20run%20custom%20jobs.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/course-builder/wiki/CustomJob">
+ 
+ <script type="text/javascript" async="" src="./07CustomJob_files/plusone.js" gapi_processed="true"></script><script src="./07CustomJob_files/cb=gapi.loaded_0" async=""></script><script src="./07CustomJob_files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" async="" src="./07CustomJob_files/plusone(1).js" gapi_processed="true"></script><script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = "heoCPCKVkf2wenffMyFPOATKiGA:1396116938725";
+ 
+ 
+ var CS_env = {"loggedInUserEmail": "mokter@gmail.com", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/11512667522589661435", "profileUrl": "/u/114869294170070768630/", "projectHomeUrl": "/p/course-builder", "relativeBaseUrl": "", "token": "heoCPCKVkf2wenffMyFPOATKiGA:1396116938725", "domainName": null, "projectName": "course-builder"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-34425937-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="./07CustomJob_files/ga.js"></script><script type="text/javascript" async="" src="./07CustomJob_files/ga(1).js"></script>
+ 
+ 
+ <title>CustomJob - 
+ course-builder -
+ 
+ Describes how to run custom jobs. - 
+ Course Builder - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./07CustomJob_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./07CustomJob_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/course-builder/gitchanges/basic?path=/CustomJob.wiki&repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/11512667522589661435/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/CustomJob#" id="multilogin-dropdown" onclick="return false;"><u><b>mokter@gmail.com</b></u> <small>▼</small></a>
+ 
+ 
+ | <a href="https://code.google.com/u/114869294170070768630/" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://code.google.com/u/114869294170070768630/" onclick="_CS_click(&#39;/gb/ph/profile&#39;);" title="Profile, Updates, and Settings"><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FCustomJob" onclick="_CS_click(&#39;/gb/ph/signout&#39;);"><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/course-builder">
+ <a href="https://code.google.com/p/course-builder/">
+ 
+ <img src="./07CustomJob_files/defaultlogo.png" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/course-builder/"><span itemprop="name">course-builder</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/course-builder/"><span itemprop="description">Course Builder</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/course-builder/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/DownloadCourseBuilder?tm=2" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist?tm=6" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/issues/list" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/course-builder/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5">&nbsp;My starred pages</option>
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off"></span>
+ 
+ 
+ 
+ <input type="submit" value="Search">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol" style="padding:0 3px 3px 0; margin:0">
+
+ 
+
+
+
+
+
+
+ 
+<style type="text/css">
+ #wikimaincol { padding-top: 6px; padding-left:1em}
+ #sidebarcontainer {
+ padding: 1.5em 2px 2px 2px;
+ min-width: 15em;
+ max-width: 20em;
+ overflow:hidden;
+}
+ .sidebartop ul { margin:0 0 0 .5em; padding-left:0 !important; list-style:none}
+ .sidebartop ul ul { margin-left:1em; padding-left:0; list-style:none; display:none}
+ .sidebartop li { margin:0 0 2px 0; padding:1px; padding-left:14px; cursor:pointer}
+ .sidebartop li a { padding:2px}
+ .sidebartop li { background: url(https://ssl.gstatic.com/codesite/ph/images/plus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeopen { background: url(https://ssl.gstatic.com/codesite/ph/images/minus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeleaf { background:none}
+ .currentpagelink { 
+ font-weight: bold;
+ text-decoration: none;
+ color: black !important; 
+ background: #c3d9ff;
+ }
+ .sidebartop ul.treeleafcontainer { display:block;}
+ .sidebarcontent { 
+ vertical-align:top;
+ padding-right: 3px;
+ border-right: 2px solid #ccc;
+ }
+</style>
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td class="sidebarcontent">
+ <div class="vt expand" id="wikisidebar">
+ <div>
+ 
+ <div style="float:right;">
+ <a class="ifExpand" style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/CustomJob#" onclick="_DW_toggleSidebar(this); return false;" title="Hide sidebar"><b>‹‹</b></a>
+ </div>
+ <div class="ifCollapse" style="padding:0 2px">
+ <a style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/CustomJob#" onclick="_DW_toggleSidebar(this); return false;" title="Show sidebar"><b>››</b></a>
+ </div>
+ 
+ 
+ <div id="sidebarcontainer" class="sidebartop ifExpand">
+ <ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist">Course Builder Checklists</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CBRoles">Course Builder Roles</a> </li><li>Technologists   </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/GetStarted">Get Started</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Download">Download the Software</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/GetCode">Run Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExplorePS">Explore Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/UploadCode">Deploy Course Builder</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/ImplementCourseMaterial">Implement Course Material</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseSettings">Customize Course Settings</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Accessibility">Accessibility</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/I18n">Internationalization</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Dashboard">Dashboard</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateRegistration">Modify Registration</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateLessons">Create Lessons and Activities</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateAssessments">Create Assessments</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PeerReview">Peer Review</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/DeployAgain">Deploy Again</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AdminPage">Administrator Page</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateNewCourse">Create New Courses</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/URLMap">URL Mapping</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Security">Security</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AppEngine">Develop with Google App Engine</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExportCourseData">Download Course Data</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ImportCourseData">Upload Course Data</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Upgrade">Upgrade Course Builder</a> </li></ul><li>Course Authors </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/WhatsInACourse">Parts of a Course Builder Course</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseFlow">Course Flow for Students</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/DesignProcess">Design Process</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PSHistory">About the Power Searching Experiment</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/OnePlan">Plan Before You Start</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/TwoDevelop">Develop the Content without Technology</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ObjectivesToOutline">From Objectives to Outline</a> </li></ul></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/WorkWithVideo">Work with Video</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/ThreeImplement">Implement the Course with Technology</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/FourPilot">Pilot with Your Target Audience</a> </li></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/ManageCommunity">Set up &amp; Manage Community</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/Announcements">Announcements &amp; Optional Material</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/WebForums">Community Discussion</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CreateEmailList">Announcements-only Email List</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/UpdateAnnouncementsTab">Update Announcements Tab</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleEmails">Example Emails</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/OnlineOfficeHours">Online Office Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/TeachingAssistants">Teaching Assistants</a> </li><li><a href="https://docs.google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE" rel="nofollow">Example Event Timeline &amp; TA Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleTAEssentialsDoc">Example TA Essentials Doc</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CommunityToolsComparison">Tools Comparison</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/MeasureEfficacy">Evaluate Course Efficacy</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/AssessmentMetrics">Student Assessments</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ReachAndEngagementMetrics">Reach &amp; Engagement</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleReachEngagementMetrics">Example Reach &amp; Engagement Data</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/HappinessMetrics">Student Happiness</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleSurvey">Example Post-Course Survey</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/AnalyticsForEdu">Combine Assessment &amp; Reach Data</a> </li></ul></ul></ul><li class="treeopen">Developers </li><ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExploreCode">Explore Directories</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ModifyTemplate">Modify Course Template</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCB">Customize Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCoursePages">Customize Course Pages</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateComponents">Create Components</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateModules">Create Modules</a> </li><li class="treeleaf"><a href="file:///C:/Users/Mokter/Dropbox/Public/CourseBuilder/CourseBuilder_HelpFiles/07CustomJob%20-%20course-builder%20-%20Describes%20how%20to%20run%20custom%20jobs.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting_files/07CustomJob%20-%20course-builder%20-%20Describes%20how%20to%20run%20custom%20jobs.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting.htm" class="currentpagelink">Create Custom Jobs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ListOfModulesExtensions">List of Modules and Extensions</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses">Arrange Courses on Disk</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ReleaseNotes">Release Notes</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/FAQ">FAQ</a> </li></ul><p></p><table class="wikitable"><tbody><tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum" rel="nofollow">Discussion forum</a> </td></tr> </tbody></table><p></p>
+ </div>
+ </div>
+</div>
+
+ </td>
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <img width="15" height="15" id="star_img" src="./07CustomJob_files/star_off.gif" style="cursor:pointer" onclick="_CS_toggleStar(this,
+ {&#39;scope&#39;: &#39;wiki&#39;,
+ &#39;user&#39;: &#39;_CURRENT_USER&#39;,
+ &#39;item&#39;: &#39;course-builder:CustomJob&#39;
+ });">
+ 
+ <span style="font-size:120%;font-weight:bold">CustomJob</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Describes how to run custom jobs.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Wed Oct 16 10:49:30 2013">
+ Oct 16, 2013</span>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p></p><h1>Create Custom Jobs</h1> <p></p><p>Course Builder allows you to create and execute custom jobs. Custom jobs allow you to perform arbitrary computations on your data and construct data pipelines that are not possible within Google App Engine's execution environment. For example, you can create a job to feed your data into a statistics package like R or SPSS. You can also create a job to load your data into a MySQL database. </p><p><strong>Note:</strong> Creating custom jobs requires Python programming knowledge. </p><p></p><ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/CustomJob#Execute_custom_jobs">Execute custom jobs</a></li><li><a href="https://code.google.com/p/course-builder/wiki/CustomJob#Explore_etl.py">Explore etl.py</a></li><li><a href="https://code.google.com/p/course-builder/wiki/CustomJob#Convert_JSON_to_CSV_or_XML">Convert JSON to CSV or XML</a></li></ul></ul> <p></p><h2><a name="Execute_custom_jobs"></a>Execute custom jobs<a href="https://code.google.com/p/course-builder/wiki/CustomJob#Execute_custom_jobs" class="section_anchor"></a></h2><p>You must extend the class called <tt>Job</tt> in <tt>tools/etl/etl_lib.py</tt>. To do so, create a Python file (.py) with the following template: </p><pre class="prettyprint"><span class="kwd"><span class="kwd">class</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">MyJob</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">custom</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">Job</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br>&nbsp; </span></span><span class="kwd"><span class="kwd">def</span></span><span class="pln"><span class="pln"> _configure_parser</span></span><span class="pun"><span class="pun">(</span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">parser</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">add_argument</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span></span><span class="pun"><span class="pun">‘</span></span><span class="pln"><span class="pln">greet</span></span><span class="pun"><span class="pun">’,</span></span><span class="pln"><span class="pln"> help</span></span><span class="pun"><span class="pun">=’</span></span><span class="typ"><span class="typ">Greeting</span></span><span class="pln"><span class="pln"> to </span></span><span class="kwd"><span class="kwd">print</span></span><span class="pun"><span class="pun">’,</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">default</span></span><span class="pun"><span class="pun">=’</span></span><span class="pln"><span class="pln">world</span></span><span class="pun"><span class="pun">’,</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; type</span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln">str</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br><br>&nbsp; </span></span><span class="kwd"><span class="kwd">def</span></span><span class="pln"><span class="pln"> main</span></span><span class="pun"><span class="pun">(</span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">print</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">‘</span></span><span class="typ"><span class="typ">Hello</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">‘</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">+</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">args</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">greet</span></span></pre><p>Define your custom computation or function in <tt>main</tt>. In the above example, it prints "Hello, World". </p><p>To run this custom job, use the <tt>run</tt> option of <tt>etl.py</tt>: </p><p><tt>python etl.py run &lt;path_to_my_Job&gt; &lt;course_url_prefix&gt; &lt;app_name&gt; &lt;app_server_name&gt; --job_args='&lt;argument&gt;'</tt> </p><p>If your custom job was: </p><ul><li>named <tt>stats.py</tt> </li><li>located in <tt>/Users/sammich/coursebuilder/tools/etl</tt> </li></ul><p></p><p>and your application: </p><ul><li>had a course URL of <tt>/poetry</tt> </li><li>was named <tt>bbq</tt> </li><li>had the server named <tt>bbq.appspot.com</tt> </li></ul><p></p><p>and wanted to output "Hello, Dolly" in the template code, you would type from your Course Builder root directory: </p><p><tt>python etl.py run tools/etl/stats.py /poetry bbq bbq.appspot.com --job_args='Dolly'</tt> </p><p>Here is the description of the <tt>etl.py</tt> command. </p><p></p><table class="wikitable"><tbody><tr><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Options and Arguments</strong> </td><td style="border: 1px solid #ccc; padding: 5px;"> <strong>Description</strong> </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> -h </td><td style="border: 1px solid #ccc; padding: 5px;"> Get help on the <tt>etl.py</tt> command. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --archive_path </td><td style="border: 1px solid #ccc; padding: 5px;"> The path and filename of the exported files, which will be compressed. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --batch_size </td><td style="border: 1px solid #ccc; padding: 5px;"> Specifies the number of results to attempt to retrieve per batch. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --datastore_types </td><td style="border: 1px solid #ccc; padding: 5px;"> When the type is <tt>datastore</tt>, this option specifies a comma-separated list of datastore model types to process. All models are processed by default.  Models are Google app engine db.Model subclass instances. They contain the data in the app's datastore. You can tell which type a model is by its name in the datastore. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --job_args </td><td style="border: 1px solid #ccc; padding: 5px;"> If the mode is run, the string containing the arguments is delegated to etl_lib.Job subclass. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --log_level {DEBUG,ERROR,INFO,WARNING} </td><td style="border: 1px solid #ccc; padding: 5px;"> Choose one error level. Specifies the log file messaging level. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> --privacy </td><td style="border: 1px solid #ccc; padding: 5px;"> When mode is <tt>download</tt> and type is <tt>datastore</tt>, this flag will strip or obfuscate information that can identify a single user. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> delete, download, run, upload </td><td style="border: 1px solid #ccc; padding: 5px;"> Choose either <tt>delete</tt>, <tt>download</tt>, <tt>run</tt>, or <tt>upload</tt>. Delete will delete all your course information. Download will download (export) files out of Course Builder. Upload will upload (import) files into Course Builder. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> type </td><td style="border: 1px solid #ccc; padding: 5px;"> Choose either <tt>course</tt> or <tt>datastore</tt>. Specifies the "type" you are downloading. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> course_url_prefix </td><td style="border: 1px solid #ccc; padding: 5px;"> The URL where the lesson is located. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> application_id </td><td style="border: 1px solid #ccc; padding: 5px;"> The name of your app. </td></tr> <tr><td style="border: 1px solid #ccc; padding: 5px;"> server </td><td style="border: 1px solid #ccc; padding: 5px;"> The fullname of the server that is hosting your app. </td></tr> </tbody></table><p></p><h2><a name="Explore_etl.py"></a>Explore etl.py<a href="https://code.google.com/p/course-builder/wiki/CustomJob#Explore_etl.py" class="section_anchor"></a></h2><p>Google App Engine provides useful services like <tt>datastore</tt> and <tt>memcache</tt>. Internally, these services are stored in a data structure that maps the name of the service to a service stub. For example, when a datastore operation like <tt>db.put()</tt> is run in user code, Google App Engine looks up the datastore stub and uses it to issue the real remote procedure call (RPC) to put data into the datastore. </p><p>This allows you to swap out service stubs at runtime. When you are running unit tests, for example, you can swap out the stubs that talk to prod services with stubs that talk to local implementations. This is helpful because it makes your tests small and reduces the unpredictability that inevitably happens when tests rely on remote services that are not always available and certainly are not entirely under the control of the test. </p><p>The service stub is one part of using <tt>etl.py</tt>. The other part is Remote API. The remote API is an optional feature that exposes your app’s datastore programmatically. Once you enable the remote API, you can use the <tt>remote_api</tt> library to make calls against it. </p><p>Course Builder comes with a library, <tt>remote.py</tt>, that lets code you run locally on your machine swap in service stubs that issue RPCs against your remote API endpoints, whether they are on your dev appserver or on your production instances. This means that you can take production code and run it on your local machine, issuing RPCs against the server of your choice. As long as you can provide credentials for that server, your local code can execute against its services like <tt>datastore</tt> and <tt>memcache</tt> with no modification to the code making those RPCs. </p><p>The lifecycle of a custom job is: </p><ol><li>You invoke <tt>etl.py</tt>, feeding it your custom job and any arguments. </li><li><tt>etl.py</tt> parses command line arguments and establishes a remote connection against the server specified on the command line. </li><li><tt>etl.py</tt> loads your custom job. It delegates arguments to the job (<tt>--job_args</tt>), if any, to your job’s argument parser. Your job parses those args. </li><li>Your job’s <tt>main()</tt> is invoked. In it, you can execute arbitrary code locally against the server enumerated on the command line. </li></ol><p>Now you can download data, run it through an arbitrary computation, and then upload it to another Course Builder instance or another business application entirely. </p><h2><a name="Convert_JSON_to_CSV_or_XML"></a>Convert JSON to CSV or XML<a href="https://code.google.com/p/course-builder/wiki/CustomJob#Convert_JSON_to_CSV_or_XML" class="section_anchor"></a></h2><p>You can convert a JSON file that is outputted by ETL and convert it to a CSV or XML file. You must convert one file at a time. To convert a JSON file, run the following command from your Course Builder root directory: </p><pre class="prettyprint"><span class="pln"><span class="pln">python tools</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">etl</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">gcbpaths</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py run tools</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">etl</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">mapreduce</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">JsonToCsv</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">/&lt;</span></span><span class="pln"><span class="pln">coursename</span></span><span class="pun"><span class="pun">&gt;</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">&lt;appid&gt;</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">&lt;</span></span><span class="pln"><span class="pln">server</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">appspot</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">com</span></span><span class="pun"><span class="pun">&gt;</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">\</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; </span></span><span class="pun"><span class="pun">--</span></span><span class="pln"><span class="pln">job_args</span></span><span class="pun"><span class="pun">=</span></span><span class="str"><span class="str">'&lt;path_to_an_Entity_file&gt; &lt;path_to_output_directory&gt;'</span></span></pre><p>The following example converts the <tt>Students.json</tt> file to CSV and puts it in the directory called <tt>movies</tt>. </p><pre class="prettyprint"><span class="pln"><span class="pln">python tools</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">etl</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">etl</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">py run tools</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">etl</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">mapreduce</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">JsonToCsv</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">cinema filmstudies filmstudies</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">appspot</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">com </span></span><span class="pun"><span class="pun">\</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; </span></span><span class="pun"><span class="pun">--</span></span><span class="pln"><span class="pln">job_args</span></span><span class="pun"><span class="pun">=</span></span><span class="str"><span class="str">'./Students.json ~/movies/students.csv'</span></span></pre>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/course-builder/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="create_time" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="pagename" value="CustomJob">
+ <input type="hidden" name="token" value="heoCPCKVkf2wenffMyFPOATKiGA:1396116938725">
+ </form>
+
+
+ <script src="./07CustomJob_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./07CustomJob_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./07CustomJob_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./07CustomJob_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><b class="categoryTitle projects" style="display: block;">Projects</b><div class="menuCategory projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><b class="categoryTitle starred_projects" style="display: block;">Starred projects</b><div class="menuCategory starred_projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="https://code.google.com/hosting/" style="display: block;">Find open source projects...</a><a class="menuItem" href="https://code.google.com/hosting/createProject" style="display: block;">Create a project...</a></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"><span class="menuText" style="display: block;"><b>mokter@gmail.com</b></span></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="http://www.google.com/accounts/AddSession?service=code&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FCustomJob" style="display: block;"><nobr>Sign in with another account...</nobr></a></div></div><div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"></div></div></body></html>

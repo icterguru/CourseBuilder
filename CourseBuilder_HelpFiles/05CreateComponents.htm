@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!-- saved from url=(0234)file:///C:/Users/Mokter/Dropbox/Public/CourseBuilder/CourseBuilder_HelpFiles/05CreateComponents%20-%20course-builder%20-%20Explains%20how%20to%20create%20custom%20components.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/course-builder/wiki/CreateComponents">
+ 
+ <script src="./05CreateComponents_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./05CreateComponents_files/plusone.js" gapi_processed="true"></script><script src="./05CreateComponents_files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" async="" src="./05CreateComponents_files/plusone(1).js" gapi_processed="true"></script><script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = "OturKyr1RFsX4DXQAWUuo21uQtE:1396116919704";
+ 
+ 
+ var CS_env = {"loggedInUserEmail": "mokter@gmail.com", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/11512667522589661435", "profileUrl": "/u/114869294170070768630/", "projectHomeUrl": "/p/course-builder", "relativeBaseUrl": "", "token": "OturKyr1RFsX4DXQAWUuo21uQtE:1396116919704", "domainName": null, "projectName": "course-builder"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-34425937-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="./05CreateComponents_files/ga.js"></script><script type="text/javascript" async="" src="./05CreateComponents_files/ga(1).js"></script>
+ 
+ 
+ <title>CreateComponents - 
+ course-builder -
+ 
+ Explains how to create custom components. - 
+ Course Builder - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./05CreateComponents_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./05CreateComponents_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/course-builder/gitchanges/basic?path=/CreateComponents.wiki&repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/11512667522589661435/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/CreateComponents#" id="multilogin-dropdown" onclick="return false;"><u><b>mokter@gmail.com</b></u> <small>▼</small></a>
+ 
+ 
+ | <a href="https://code.google.com/u/114869294170070768630/" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://code.google.com/u/114869294170070768630/" onclick="_CS_click(&#39;/gb/ph/profile&#39;);" title="Profile, Updates, and Settings"><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FCreateComponents" onclick="_CS_click(&#39;/gb/ph/signout&#39;);"><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/course-builder">
+ <a href="https://code.google.com/p/course-builder/">
+ 
+ <img src="./05CreateComponents_files/defaultlogo.png" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/course-builder/"><span itemprop="name">course-builder</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/course-builder/"><span itemprop="description">Course Builder</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/course-builder/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/DownloadCourseBuilder?tm=2" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist?tm=6" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/issues/list" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/course-builder/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5">&nbsp;My starred pages</option>
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off"></span>
+ 
+ 
+ 
+ <input type="submit" value="Search">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol" style="padding:0 3px 3px 0; margin:0">
+
+ 
+
+
+
+
+
+
+ 
+<style type="text/css">
+ #wikimaincol { padding-top: 6px; padding-left:1em}
+ #sidebarcontainer {
+ padding: 1.5em 2px 2px 2px;
+ min-width: 15em;
+ max-width: 20em;
+ overflow:hidden;
+}
+ .sidebartop ul { margin:0 0 0 .5em; padding-left:0 !important; list-style:none}
+ .sidebartop ul ul { margin-left:1em; padding-left:0; list-style:none; display:none}
+ .sidebartop li { margin:0 0 2px 0; padding:1px; padding-left:14px; cursor:pointer}
+ .sidebartop li a { padding:2px}
+ .sidebartop li { background: url(https://ssl.gstatic.com/codesite/ph/images/plus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeopen { background: url(https://ssl.gstatic.com/codesite/ph/images/minus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeleaf { background:none}
+ .currentpagelink { 
+ font-weight: bold;
+ text-decoration: none;
+ color: black !important; 
+ background: #c3d9ff;
+ }
+ .sidebartop ul.treeleafcontainer { display:block;}
+ .sidebarcontent { 
+ vertical-align:top;
+ padding-right: 3px;
+ border-right: 2px solid #ccc;
+ }
+</style>
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td class="sidebarcontent">
+ <div class="vt expand" id="wikisidebar">
+ <div>
+ 
+ <div style="float:right;">
+ <a class="ifExpand" style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/CreateComponents#" onclick="_DW_toggleSidebar(this); return false;" title="Hide sidebar"><b>‹‹</b></a>
+ </div>
+ <div class="ifCollapse" style="padding:0 2px">
+ <a style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/CreateComponents#" onclick="_DW_toggleSidebar(this); return false;" title="Show sidebar"><b>››</b></a>
+ </div>
+ 
+ 
+ <div id="sidebarcontainer" class="sidebartop ifExpand">
+ <ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist">Course Builder Checklists</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CBRoles">Course Builder Roles</a> </li><li>Technologists   </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/GetStarted">Get Started</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Download">Download the Software</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/GetCode">Run Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExplorePS">Explore Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/UploadCode">Deploy Course Builder</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/ImplementCourseMaterial">Implement Course Material</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseSettings">Customize Course Settings</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Accessibility">Accessibility</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/I18n">Internationalization</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Dashboard">Dashboard</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateRegistration">Modify Registration</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateLessons">Create Lessons and Activities</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateAssessments">Create Assessments</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PeerReview">Peer Review</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/DeployAgain">Deploy Again</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AdminPage">Administrator Page</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateNewCourse">Create New Courses</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/URLMap">URL Mapping</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Security">Security</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AppEngine">Develop with Google App Engine</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExportCourseData">Download Course Data</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ImportCourseData">Upload Course Data</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Upgrade">Upgrade Course Builder</a> </li></ul><li>Course Authors </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/WhatsInACourse">Parts of a Course Builder Course</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseFlow">Course Flow for Students</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/DesignProcess">Design Process</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PSHistory">About the Power Searching Experiment</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/OnePlan">Plan Before You Start</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/TwoDevelop">Develop the Content without Technology</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ObjectivesToOutline">From Objectives to Outline</a> </li></ul></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/WorkWithVideo">Work with Video</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/ThreeImplement">Implement the Course with Technology</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/FourPilot">Pilot with Your Target Audience</a> </li></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/ManageCommunity">Set up &amp; Manage Community</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/Announcements">Announcements &amp; Optional Material</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/WebForums">Community Discussion</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CreateEmailList">Announcements-only Email List</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/UpdateAnnouncementsTab">Update Announcements Tab</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleEmails">Example Emails</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/OnlineOfficeHours">Online Office Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/TeachingAssistants">Teaching Assistants</a> </li><li><a href="https://docs.google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE" rel="nofollow">Example Event Timeline &amp; TA Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleTAEssentialsDoc">Example TA Essentials Doc</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CommunityToolsComparison">Tools Comparison</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/MeasureEfficacy">Evaluate Course Efficacy</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/AssessmentMetrics">Student Assessments</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ReachAndEngagementMetrics">Reach &amp; Engagement</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleReachEngagementMetrics">Example Reach &amp; Engagement Data</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/HappinessMetrics">Student Happiness</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleSurvey">Example Post-Course Survey</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/AnalyticsForEdu">Combine Assessment &amp; Reach Data</a> </li></ul></ul></ul><li class="treeopen">Developers </li><ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExploreCode">Explore Directories</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ModifyTemplate">Modify Course Template</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCB">Customize Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCoursePages">Customize Course Pages</a> </li><li class="treeleaf"><a href="file:///C:/Users/Mokter/Dropbox/Public/CourseBuilder/CourseBuilder_HelpFiles/05CreateComponents%20-%20course-builder%20-%20Explains%20how%20to%20create%20custom%20components.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting_files/05CreateComponents%20-%20course-builder%20-%20Explains%20how%20to%20create%20custom%20components.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting.htm" class="currentpagelink">Create Components</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateModules">Create Modules</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CustomJob">Create Custom Jobs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ListOfModulesExtensions">List of Modules and Extensions</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses">Arrange Courses on Disk</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ReleaseNotes">Release Notes</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/FAQ">FAQ</a> </li></ul><p></p><table class="wikitable"><tbody><tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum" rel="nofollow">Discussion forum</a> </td></tr> </tbody></table><p></p>
+ </div>
+ </div>
+</div>
+
+ </td>
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <img width="15" height="15" id="star_img" src="./05CreateComponents_files/star_off.gif" style="cursor:pointer" onclick="_CS_toggleStar(this,
+ {&#39;scope&#39;: &#39;wiki&#39;,
+ &#39;user&#39;: &#39;_CURRENT_USER&#39;,
+ &#39;item&#39;: &#39;course-builder:CreateComponents&#39;
+ });">
+ 
+ <span style="font-size:120%;font-weight:bold">CreateComponents</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Explains how to create custom components.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Fri Jun 28 19:58:13 2013">
+ Jun 28, 2013</span>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p></p><h1>Create Custom Components</h1> <p></p><p>If you want a <a href="https://code.google.com/p/course-builder/wiki/CreateLessons#Create_lesson_content_from_the_browser">component</a> that is not currently available, you can create your own. To add a custom component, you must: </p><ul><li>create a method to render the new component </li><li>define the component schema </li><li>create an icon that represents your component </li></ul><p>Your custom definitions should reside in the following directory: <tt>extensions/tags/&lt;custom_name&gt;/</tt> </p><p>All the official Course Builder supplied components are in the <tt>gcb/</tt> directory. All component definitions must be defined in the <tt>__init__.py</tt> file. </p><h2><a name="Define_the_Component"></a>Define the Component<a href="https://code.google.com/p/course-builder/wiki/CreateComponents#Define_the_Component" class="section_anchor"></a></h2><p>In your new <tt>tags/</tt> directory, you must create your <tt>__init__.py</tt> to define the components. You may want to copy over <tt>extensions/tags/gcb/__init__.py</tt>. It may be quicker to edit an existing, working file. </p><p>In addition to importing the libraries and creating a definition that forces the transaction over https, all of which you should keep, you see one class per component. The following example shows the YouTube class. </p><pre class="prettyprint"><span class="kwd"><span class="kwd">class</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">YouTube</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">tags</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">BaseTag</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br><br>&nbsp; &nbsp; </span></span><span class="lit"><span class="lit">@classmethod</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">def</span></span><span class="pln"><span class="pln"> name</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">cls</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">return</span></span><span class="str"><span class="str">'YouTube Video'</span></span><span class="pln"><span class="pln"><br><br>&nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">def</span></span><span class="pln"><span class="pln"> render</span></span><span class="pun"><span class="pun">(</span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> node</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; video_id </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> node</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">attrib</span></span><span class="pun"><span class="pun">.</span></span><span class="kwd"><span class="kwd">get</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">'videoid'</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; you_tube_url </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'https://www.youtube.com/embed/%s'</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'?feature=player_embedded&amp;amp;rel=0'</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">%</span></span><span class="pln"><span class="pln"> video_id<br>&nbsp; &nbsp; &nbsp; &nbsp; iframe </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> cElementTree</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">XML</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">"""<br>&lt;p class="</span></span><span class="pln"><span class="pln">gcb</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">video</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">container</span></span><span class="str"><span class="str">"&gt;<br>&nbsp; &lt;iframe class="</span></span><span class="pln"><span class="pln">youtube</span></span><span class="pun"><span class="pun">-</span></span><span class="pln"><span class="pln">player</span></span><span class="str"><span class="str">" title="</span></span><span class="typ"><span class="typ">YouTube</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Video</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">Player</span></span><span class="str"><span class="str">"<br>&nbsp; &nbsp; type="</span></span><span class="pln"><span class="pln">text</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">html</span></span><span class="str"><span class="str">" width="</span></span><span class="lit"><span class="lit">650</span></span><span class="str"><span class="str">" height="</span></span><span class="lit"><span class="lit">400</span></span><span class="str"><span class="str">" frameborder="</span></span><span class="lit"><span class="lit">0</span></span><span class="str"><span class="str">"<br>&nbsp; &nbsp; allowfullscreen="</span></span><span class="pln"><span class="pln">allowfullscreen</span></span><span class="str"><span class="str">"&gt;<br>&nbsp; &lt;/iframe&gt;<br>&lt;/p&gt;"""</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; iframe</span></span><span class="pun"><span class="pun">[</span></span><span class="lit"><span class="lit">0</span></span><span class="pun"><span class="pun">].</span></span><span class="kwd"><span class="kwd">set</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">'src'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> you_tube_url</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> iframe<br><br>&nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">def</span></span><span class="pln"><span class="pln"> get_icon_url</span></span><span class="pun"><span class="pun">(</span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">"""Return the URL for the icon to be displayed in the rich text editor.<br><br>&nbsp; &nbsp; &nbsp; &nbsp; Images should be placed in a folder called 'resources' inside the main<br>&nbsp; &nbsp; &nbsp; &nbsp; package for the tag definitions."""</span></span><span class="pln"><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'/extensions/tags/gcb/resources/youtube.png'</span></span><span class="pln"><span class="pln"><br><br>&nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">def</span></span><span class="pln"><span class="pln"> get_schema</span></span><span class="pun"><span class="pun">(</span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> unused_handler</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">"""Return the list of fields which will be displayed in the editor.<br><br>&nbsp; &nbsp; &nbsp; &nbsp; This method assembles the list of fields which will be displayed in<br>&nbsp; &nbsp; &nbsp; &nbsp; the rich text editor when a user double-clicks on the icon for the tag.<br>&nbsp; &nbsp; &nbsp; &nbsp; The fields are a list of SchemaField objects in a FieldRegistry<br>&nbsp; &nbsp; &nbsp; &nbsp; container. Each SchemaField has the actual attribute name as used in the<br>&nbsp; &nbsp; &nbsp; &nbsp; tag, the display name for the form, and the type (usually string)."""</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; reg </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> schema_fields</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">FieldRegistry</span></span><span class="pun"><span class="pun">(</span></span><span class="typ"><span class="typ">YouTube</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">name</span></span><span class="pun"><span class="pun">())</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; reg</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">add_property</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; schema_fields</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">SchemaField</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">'videoid'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'Video Id'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'string'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; optional</span></span><span class="pun"><span class="pun">=</span></span><span class="kwd"><span class="kwd">True</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; description</span></span><span class="pun"><span class="pun">=</span></span><span class="str"><span class="str">'Provide YouTube video ID (e.g. Kdg2drcUjYI)'</span></span><span class="pun"><span class="pun">))</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> reg</span></span></pre><ul><li>The <tt>name</tt> method is defined in those cases where the class name is different than the name the users see. For example, the class name is <tt>YouTube</tt> but users will see "YouTube Video." This function is optional. </li></ul><ul><li>The <tt>render</tt> method defines how to display the component. The <tt>cElementTree.XML()</tt> function sanitizes the HTML you define before it is outputted to the page. </li></ul><ul><li>The <tt>get_icon_url</tt> method displays the icon in the lesson body. Create a directory called <tt>resources/</tt> in your new component directory and place the icon there. For example, <tt>extensions/tags/custom/resources/iframe.png</tt>. </li></ul><ul><li>The <tt>get_schema</tt> method defines what parameters the user must supply to construct the component. For YouTube videos, it is the video ID. </li><ul><li><tt>reg</tt> registers the property that you will need for you new component. </li><li>Add your component properties through <tt>reg.add_property()</tt>. </li></ul></ul>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/course-builder/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="create_time" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="pagename" value="CreateComponents">
+ <input type="hidden" name="token" value="OturKyr1RFsX4DXQAWUuo21uQtE:1396116919704">
+ </form>
+
+
+ <script src="./05CreateComponents_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./05CreateComponents_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./05CreateComponents_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./05CreateComponents_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><b class="categoryTitle projects" style="display: block;">Projects</b><div class="menuCategory projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><b class="categoryTitle starred_projects" style="display: block;">Starred projects</b><div class="menuCategory starred_projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="https://code.google.com/hosting/" style="display: block;">Find open source projects...</a><a class="menuItem" href="https://code.google.com/hosting/createProject" style="display: block;">Create a project...</a></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"><span class="menuText" style="display: block;"><b>mokter@gmail.com</b></span></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="http://www.google.com/accounts/AddSession?service=code&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FCreateComponents" style="display: block;"><nobr>Sign in with another account...</nobr></a></div></div><div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"></div></div></body></html>

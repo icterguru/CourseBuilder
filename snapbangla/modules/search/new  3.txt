@@ -1,0 +1,5 @@
+ndexing in progress.
+
+If gcb_can_index_automatically is enabled on the Admin > Settings page, then Index Course will be run daily to keep your courses' indices up to date.
+
+To view more details about this course's search index, view the Full Text Search tab of the App Engine dashboard with the namespace of the current course. 

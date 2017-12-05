@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!-- saved from url=(0228)file:///C:/Users/Mokter/Dropbox/Public/CourseBuilder/CourseBuilder_HelpFiles/06CreateModules%20-%20course-builder%20-%20Explains%20how%20to%20create%20custom%20modules.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/course-builder/wiki/CreateModules">
+ 
+ <script type="text/javascript" async="" src="./06CreateModules_files/plusone.js" gapi_processed="true"></script><script src="./06CreateModules_files/cb=gapi.loaded_0" async=""></script><script src="./06CreateModules_files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" async="" src="./06CreateModules_files/plusone(1).js" gapi_processed="true"></script><script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = "APJNXfGK9w71H1BK1sD-I1edU1k:1396116929338";
+ 
+ 
+ var CS_env = {"loggedInUserEmail": "mokter@gmail.com", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/11512667522589661435", "profileUrl": "/u/114869294170070768630/", "projectHomeUrl": "/p/course-builder", "relativeBaseUrl": "", "token": "APJNXfGK9w71H1BK1sD-I1edU1k:1396116929338", "domainName": null, "projectName": "course-builder"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-34425937-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="./06CreateModules_files/ga.js"></script><script type="text/javascript" async="" src="./06CreateModules_files/ga(1).js"></script>
+ 
+ 
+ <title>CreateModules - 
+ course-builder -
+ 
+ Explains how to create custom modules. - 
+ Course Builder - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./06CreateModules_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./06CreateModules_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/course-builder/gitchanges/basic?path=/CreateModules.wiki&repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/11512667522589661435/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/CreateModules#" id="multilogin-dropdown" onclick="return false;"><u><b>mokter@gmail.com</b></u> <small>▼</small></a>
+ 
+ 
+ | <a href="https://code.google.com/u/114869294170070768630/" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://code.google.com/u/114869294170070768630/" onclick="_CS_click(&#39;/gb/ph/profile&#39;);" title="Profile, Updates, and Settings"><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FCreateModules" onclick="_CS_click(&#39;/gb/ph/signout&#39;);"><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/course-builder">
+ <a href="https://code.google.com/p/course-builder/">
+ 
+ <img src="./06CreateModules_files/defaultlogo.png" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/course-builder/"><span itemprop="name">course-builder</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/course-builder/"><span itemprop="description">Course Builder</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/course-builder/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/DownloadCourseBuilder?tm=2" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist?tm=6" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/issues/list" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/course-builder/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5">&nbsp;My starred pages</option>
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off"></span>
+ 
+ 
+ 
+ <input type="submit" value="Search">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol" style="padding:0 3px 3px 0; margin:0">
+
+ 
+
+
+
+
+
+
+ 
+<style type="text/css">
+ #wikimaincol { padding-top: 6px; padding-left:1em}
+ #sidebarcontainer {
+ padding: 1.5em 2px 2px 2px;
+ min-width: 15em;
+ max-width: 20em;
+ overflow:hidden;
+}
+ .sidebartop ul { margin:0 0 0 .5em; padding-left:0 !important; list-style:none}
+ .sidebartop ul ul { margin-left:1em; padding-left:0; list-style:none; display:none}
+ .sidebartop li { margin:0 0 2px 0; padding:1px; padding-left:14px; cursor:pointer}
+ .sidebartop li a { padding:2px}
+ .sidebartop li { background: url(https://ssl.gstatic.com/codesite/ph/images/plus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeopen { background: url(https://ssl.gstatic.com/codesite/ph/images/minus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeleaf { background:none}
+ .currentpagelink { 
+ font-weight: bold;
+ text-decoration: none;
+ color: black !important; 
+ background: #c3d9ff;
+ }
+ .sidebartop ul.treeleafcontainer { display:block;}
+ .sidebarcontent { 
+ vertical-align:top;
+ padding-right: 3px;
+ border-right: 2px solid #ccc;
+ }
+</style>
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td class="sidebarcontent">
+ <div class="vt expand" id="wikisidebar">
+ <div>
+ 
+ <div style="float:right;">
+ <a class="ifExpand" style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/CreateModules#" onclick="_DW_toggleSidebar(this); return false;" title="Hide sidebar"><b>‹‹</b></a>
+ </div>
+ <div class="ifCollapse" style="padding:0 2px">
+ <a style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/CreateModules#" onclick="_DW_toggleSidebar(this); return false;" title="Show sidebar"><b>››</b></a>
+ </div>
+ 
+ 
+ <div id="sidebarcontainer" class="sidebartop ifExpand">
+ <ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist">Course Builder Checklists</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CBRoles">Course Builder Roles</a> </li><li>Technologists   </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/GetStarted">Get Started</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Download">Download the Software</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/GetCode">Run Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExplorePS">Explore Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/UploadCode">Deploy Course Builder</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/ImplementCourseMaterial">Implement Course Material</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseSettings">Customize Course Settings</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Accessibility">Accessibility</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/I18n">Internationalization</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Dashboard">Dashboard</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateRegistration">Modify Registration</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateLessons">Create Lessons and Activities</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateAssessments">Create Assessments</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PeerReview">Peer Review</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/DeployAgain">Deploy Again</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AdminPage">Administrator Page</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateNewCourse">Create New Courses</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/URLMap">URL Mapping</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Security">Security</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AppEngine">Develop with Google App Engine</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExportCourseData">Download Course Data</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ImportCourseData">Upload Course Data</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Upgrade">Upgrade Course Builder</a> </li></ul><li>Course Authors </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/WhatsInACourse">Parts of a Course Builder Course</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseFlow">Course Flow for Students</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/DesignProcess">Design Process</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PSHistory">About the Power Searching Experiment</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/OnePlan">Plan Before You Start</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/TwoDevelop">Develop the Content without Technology</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ObjectivesToOutline">From Objectives to Outline</a> </li></ul></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/WorkWithVideo">Work with Video</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/ThreeImplement">Implement the Course with Technology</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/FourPilot">Pilot with Your Target Audience</a> </li></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/ManageCommunity">Set up &amp; Manage Community</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/Announcements">Announcements &amp; Optional Material</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/WebForums">Community Discussion</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CreateEmailList">Announcements-only Email List</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/UpdateAnnouncementsTab">Update Announcements Tab</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleEmails">Example Emails</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/OnlineOfficeHours">Online Office Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/TeachingAssistants">Teaching Assistants</a> </li><li><a href="https://docs.google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE" rel="nofollow">Example Event Timeline &amp; TA Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleTAEssentialsDoc">Example TA Essentials Doc</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CommunityToolsComparison">Tools Comparison</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/MeasureEfficacy">Evaluate Course Efficacy</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/AssessmentMetrics">Student Assessments</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ReachAndEngagementMetrics">Reach &amp; Engagement</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleReachEngagementMetrics">Example Reach &amp; Engagement Data</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/HappinessMetrics">Student Happiness</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleSurvey">Example Post-Course Survey</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/AnalyticsForEdu">Combine Assessment &amp; Reach Data</a> </li></ul></ul></ul><li class="treeopen">Developers </li><ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExploreCode">Explore Directories</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ModifyTemplate">Modify Course Template</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCB">Customize Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCoursePages">Customize Course Pages</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateComponents">Create Components</a> </li><li class="treeleaf"><a href="file:///C:/Users/Mokter/Dropbox/Public/CourseBuilder/CourseBuilder_HelpFiles/06CreateModules%20-%20course-builder%20-%20Explains%20how%20to%20create%20custom%20modules.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting_files/06CreateModules%20-%20course-builder%20-%20Explains%20how%20to%20create%20custom%20modules.%20-%20Course%20Builder%20-%20Google%20Project%20Hosting.htm" class="currentpagelink">Create Modules</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CustomJob">Create Custom Jobs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ListOfModulesExtensions">List of Modules and Extensions</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses">Arrange Courses on Disk</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ReleaseNotes">Release Notes</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/FAQ">FAQ</a> </li></ul><p></p><table class="wikitable"><tbody><tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum" rel="nofollow">Discussion forum</a> </td></tr> </tbody></table><p></p>
+ </div>
+ </div>
+</div>
+
+ </td>
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <img width="15" height="15" id="star_img" src="./06CreateModules_files/star_off.gif" style="cursor:pointer" onclick="_CS_toggleStar(this,
+ {&#39;scope&#39;: &#39;wiki&#39;,
+ &#39;user&#39;: &#39;_CURRENT_USER&#39;,
+ &#39;item&#39;: &#39;course-builder:CreateModules&#39;
+ });">
+ 
+ <span style="font-size:120%;font-weight:bold">CreateModules</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Explains how to create custom modules.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Thu Aug 15 11:42:29 2013">
+ Aug 15, 2013</span>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p></p><h1>Create Custom Modules</h1> <p></p><p></p><ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/CreateModules#Add_Khan_Academy_Exercises">Add Khan Academy Exercises</a></li><ul><li><a href="https://code.google.com/p/course-builder/wiki/CreateModules#Khan_Academy_Exercise_embed.js_File">Khan Academy Exercise embed.js File</a></li></ul></ul></ul> <p></p><p>If you want customizations that cannot be satisfied by adding new links, pages, or components, you can add custom modules. Modules are files that contain code authored independent of Course Builder yet can be integrated without editing the native Course Builder code. Each piece of functionality (one module, one feature) is captured in a collection of files. These collections of files are known as a "module" and reside in one place under a unique name. </p><p>In Course Builder, the modules are located in the <tt>modules/</tt> directory and they are registered in <tt>main.py</tt>.  </p><p>To create a custom module, at the very least you must: </p><ul><li>import your module through the <tt>main.py</tt> file. </li><li>enable your module through the <tt>main.py</tt> file. </li><li>create your module directory under <tt>modules/</tt>. </li><li>add <tt>__init__.py</tt> file in your new module directory. </li><li>define your feature in a Python file in your new module directory. </li></ul><p></p><h2><a name="Add_Khan_Academy_Exercises"></a>Add Khan Academy Exercises<a href="https://code.google.com/p/course-builder/wiki/CreateModules#Add_Khan_Academy_Exercises" class="section_anchor"></a></h2><p>This section illustrates how to create a Khan Academy module named <tt>khanex</tt>. </p><ol><li>Modify the <tt>main.py</tt> file in your Course Builder root directory to import and enable the module. </li><pre class="prettyprint"><span class="pln"><span class="pln">&nbsp; &nbsp; </span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">import</span></span><span class="pln"><span class="pln"> modules</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">khanex</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">khanex<br>&nbsp; &nbsp; </span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; modules</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">khanex</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">khanex</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">register_module</span></span><span class="pun"><span class="pun">().</span></span><span class="pln"><span class="pln">enable</span></span><span class="pun"><span class="pun">()</span></span></pre><li>Create the directory <tt>modules/khanex/</tt>. </li><li>Create an empty <tt>__init__.py</tt> under <tt>modules/khanex/</tt>. </li><li>Create a <tt>khanex.py</tt> file under <tt>modules/khanex/</tt>. </li><li>In the <tt>khanex.py</tt> file, create the module registration function. The registration function connects your extensions to Course Builder. Specifically, add a: </li><ul><li><strong>New static handler</strong>: serves all the static resources for the Khan Academy Exercises. These resources are packaged as a zip file and the handler will simply serve the files from the zip file. </li><li><strong>New custom tag</strong>: visually represents a specific Khan Academy Exercise in a lesson page. </li><li><strong>New dynamic handler</strong>: records student attempts in solving the exercises. </li><li>Therefore, the code for the registration function is: </li><pre class="prettyprint"><span class="pln"><span class="pln">&nbsp; &nbsp; </span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">def</span></span><span class="pln"><span class="pln"> register_module</span></span><span class="pun"><span class="pun">():</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">"""Registers this module in the registry."""</span></span><span class="pln"><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="com"><span class="com"># register custom tag</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tags</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">Registry</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">add_tag_binding</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">'khanex'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">KhanExerciseTag</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="com"><span class="com"># register handlers</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zip_handler </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'/khan-exercises'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> sites</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">make_zip_handler</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">ZIP_FILE</span></span><span class="pun"><span class="pun">))</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; render_handler </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'/khan-exercises/khan-exercises/indirect/'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">KhanExerciseRenderer</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="com"><span class="com"># register module</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">global</span></span><span class="pln"><span class="pln"> custom_module<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; custom_module </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> custom_modules</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">Module</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'Khan Academy Exercise'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'A set of pages for delivering Khan Academy Exercises via '</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'Course Builder.'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="pun"><span class="pun">[],</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">[</span></span><span class="pln"><span class="pln">render_handler</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> zip_handler</span></span><span class="pun"><span class="pun">])</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> custom_module &nbsp; &nbsp; &nbsp; &nbsp;</span></span></pre></ul><blockquote>All modules can be inspected by the administrator in the <strong>Deployment</strong> section of Course Builder instance. 
+<img src="./06CreateModules_files/khan-deployment.png" width="500px">	 
+</blockquote><li>Course Builder uses XHTML to represent student facing content. Create a new tag called {{{khanex}} and use it in the lesson body: </li><pre class="prettyprint"><span class="pln"><span class="pln">&nbsp; </span></span><span class="tag"><span class="tag">&lt;h1&gt;</span></span><span class="pln"><span class="pln">My lesson</span></span><span class="tag"><span class="tag">&lt;/h1&gt;</span></span><span class="pln"><span class="pln"><br>&nbsp; </span></span><span class="tag"><span class="tag">&lt;p&gt;</span></span><span class="pln"><span class="pln">My Exercise:<br>&nbsp; &nbsp;</span></span><span class="tag"><span class="tag">&lt;khanex</span></span><span class="pln"><span class="pln"> </span></span><span class="atn"><span class="atn">name</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"adding_and_subtracting_negative_numbers"</span></span><span class="tag"><span class="tag">&gt;&lt;/khanex&gt;</span></span><span class="pln"><span class="pln"><br>&nbsp; </span></span><span class="tag"><span class="tag">&lt;/p&gt;</span></span></pre><li>Instead of writing the tag manually, we simply tell the Course Builder visual editor about the new tag properties. The editor then allows the course author to  use the tag in either the WYSIWYG or raw HTML mode. Our tag only has one property: the name of the specific exercise from the bundled Khan Academy Exercise library. The tag properties are configured by constructing a tag schema object and overriding the method <tt>get_schema()</tt>. In the <tt>khanex.py</tt> file, add the following code (but leave off the code that inspects the zip file and lists all exercises it finds in there): </li><pre class="prettyprint"><span class="pln"><span class="pln">&nbsp; </span></span><span class="kwd"><span class="kwd">def</span></span><span class="pln"><span class="pln"> get_schema</span></span><span class="pun"><span class="pun">(</span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> unused_handler</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">"""Make schema with a list of all exercises by inspecting a zip file."""</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; reg </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> schema_fields</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">FieldRegistry</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">'Khan Exercises'</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; reg</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">add_property</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; schema_fields</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">SchemaField</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'name'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'Exercises'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'select'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> optional</span></span><span class="pun"><span class="pun">=</span></span><span class="kwd"><span class="kwd">True</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; select_data</span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln">items</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; description</span></span><span class="pun"><span class="pun">=(</span></span><span class="str"><span class="str">'The relative URL name of the exercise.'</span></span><span class="pun"><span class="pun">)))</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> reg</span></span></pre><blockquote><img src="./06CreateModules_files/khan-editor.png" width="500px"> 
+</blockquote><li>Convert the new <tt>khanex</tt> tag into something a student can see by creating a script that embeds an iframe. Knowing what the <tt>embed.js</tt> file does in the following code is optional and is discussed separately in a subsequent section at the end of this page.  In the <tt>khanex.py</tt> file add: </li><pre class="prettyprint"><span class="pln"><span class="pln">&nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">def</span></span><span class="pln"><span class="pln"> render</span></span><span class="pun"><span class="pun">(</span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> node</span></span><span class="pun"><span class="pun">):</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">"""Embed just a &lt;script&gt; tag that will in turn create an &lt;iframe&gt;."""</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; name </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> node</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">attrib</span></span><span class="pun"><span class="pun">.</span></span><span class="kwd"><span class="kwd">get</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">'name'</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; caption </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> name</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">replace</span></span><span class="pun"><span class="pun">(</span></span><span class="str"><span class="str">'_'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">' '</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="kwd"><span class="kwd">return</span></span><span class="pln"><span class="pln"> cElementTree</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">XML</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">"""<br>&lt;div style='width: 450px;'&gt;<br>Khan Academy Exercise: %s<br>&lt;br/&gt;<br>&lt;script&gt;<br>// customize the style of the exercise iframe<br>var ity_ef_style = "</span></span><span class="pln"><span class="pln">width</span></span><span class="pun"><span class="pun">:</span></span><span class="pln"><span class="pln"> </span></span><span class="lit"><span class="lit">750px</span></span><span class="pun"><span class="pun">;</span></span><span class="str"><span class="str">";<br>&lt;/script&gt;<br>&lt;script src="</span></span><span class="pun"><span class="pun">%</span></span><span class="pln"><span class="pln">s</span></span><span class="str"><span class="str">" type="</span></span><span class="pln"><span class="pln">text</span></span><span class="pun"><span class="pun">/</span></span><span class="pln"><span class="pln">javascript</span></span><span class="str"><span class="str">"&gt;&lt;/script&gt;<br>&lt;/div&gt;"""</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">%</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; cgi</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">escape</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">caption</span></span><span class="pun"><span class="pun">),</span></span><span class="pln"><span class="pln"> </span></span><span class="str"><span class="str">'khan-exercises/embed.js?static:%s'</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">%</span></span><span class="pln"><span class="pln"> name</span></span><span class="pun"><span class="pun">))</span></span></pre><li>When students interact with an exercise, you may want to know all the attempts they make. Our Khan Academy Exercises package has the callback that sends student interaction data to a server of your choice. Implement the server-side handler that receives this data with the class <tt>KhanExerciseRenderer</tt> post method. It receives JSON data representing student actions. After proper authentication, the data is captured as an Event for later processing: </li><pre class="prettyprint"><span class="pln"><span class="pln">&nbsp; </span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br>&nbsp; </span></span><span class="com"><span class="com"># record submission</span></span><span class="pln"><span class="pln"><br>&nbsp; models</span></span><span class="pun"><span class="pun">.</span></span><span class="typ"><span class="typ">EventEntity</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">record</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'module-khanex.exercise-submit'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">get_user</span></span><span class="pun"><span class="pun">(),</span></span><span class="pln"><span class="pln"> data</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br>&nbsp; </span></span><span class="pun"><span class="pun">...</span></span></pre><li>See all captured events using the Google App Engine datastore viewer. Here is a typical event: </li><blockquote><img src="./06CreateModules_files/khan-events.png" width="500px"> 
+</blockquote><li>There are many interesting things one can do with data submission: record progress only if student gave a right answer, update student grade book, find related exercises, etc. The following code updates the progress indicator and records that the student attempted a specific exercise: </li><pre class="prettyprint"><span class="pln"><span class="pln">&nbsp; </span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp;</span></span><span class="com"><span class="com"># update progress</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp;unit_id</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> lesson_id </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> </span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">_get_unit_lesson_from</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln">data</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp;</span></span><span class="kwd"><span class="kwd">self</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">get_course</span></span><span class="pun"><span class="pun">().</span></span><span class="pln"><span class="pln">get_progress_tracker</span></span><span class="pun"><span class="pun">().</span></span><span class="pln"><span class="pln">put_activity_accessed</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp;student</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> unit_id</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> lesson_id</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp;</span></span><span class="pun"><span class="pun">...</span></span></pre><blockquote><img src="./06CreateModules_files/khan-progress.png" width="500px"> 
+</blockquote><li>Define a new configuration property that holds a list of exercise names. The bundled Khan Academy Exercise library contains over 400 exercises, but we can restrict the number available to the course author: </li><pre class="prettyprint"><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br></span></span><span class="kwd"><span class="kwd">from</span></span><span class="pln"><span class="pln"> models</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">config </span></span><span class="kwd"><span class="kwd">import</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">ConfigProperty</span></span><span class="pln"><span class="pln"><br></span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br>WHITELISTED_EXERCISES </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">ConfigProperty</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'_khanex_whitelisted'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> str</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> </span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'A white-listed exercises that can be show to students. If this list '</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'is empty, all exercises are available.'</span></span><span class="pun"><span class="pun">),</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; default_value</span></span><span class="pun"><span class="pun">=</span></span><span class="str"><span class="str">''</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"> multiline</span></span><span class="pun"><span class="pun">=</span></span><span class="kwd"><span class="kwd">True</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br></span></span><span class="pun"><span class="pun">...</span></span></pre><blockquote>Now the property can be modified to a desired value at runtime. Here is the new property (in blue) in the list of settings: 
+<img src="./06CreateModules_files/khan-settings.png" width="500px"> 
+</blockquote><li>Click the <strong>Override</strong> button to bring up the editor and modify the value. The user interface was constructed automatically given a property definition. Course Builder builds the user interface, stores property values in the datastore, and propagates value updates to all front end application instances. The only thing left to do is to check the value before listing or serving a specific exercise. </li><blockquote><img src="./06CreateModules_files/khan-editor-whitelist.png" width="500px"> 
+</blockquote><li>Create a new performance counter to count the number of times students submit an attempt to the server. We declare the counter and then update its value in the <tt>post()</tt> method. </li><pre class="prettyprint"><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br></span></span><span class="kwd"><span class="kwd">from</span></span><span class="pln"><span class="pln"> models</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">counters </span></span><span class="kwd"><span class="kwd">import</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">PerfCounter</span></span><span class="pln"><span class="pln"><br></span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br></span></span><span class="com"><span class="com"># declare</span></span><span class="pln"><span class="pln"><br>ATTEMPT_COUNT </span></span><span class="pun"><span class="pun">=</span></span><span class="pln"><span class="pln"> </span></span><span class="typ"><span class="typ">PerfCounter</span></span><span class="pun"><span class="pun">(</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'gcb-khanex-attempt-count'</span></span><span class="pun"><span class="pun">,</span></span><span class="pln"><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="str"><span class="str">'A number of attempts made by all users on all exercises.'</span></span><span class="pun"><span class="pun">)</span></span><span class="pln"><span class="pln"><br></span></span><span class="pun"><span class="pun">...</span></span><span class="pln"><span class="pln"><br></span></span><span class="com"><span class="com"># update</span></span><span class="pln"><span class="pln"><br>ATTEMPT_COUNT</span></span><span class="pun"><span class="pun">.</span></span><span class="pln"><span class="pln">inc</span></span><span class="pun"><span class="pun">()</span></span><span class="pln"><span class="pln"><br></span></span><span class="pun"><span class="pun">...</span></span></pre></ol><blockquote>The performance counter values are automatically aggregate across all front end application instances and displayed to the system administrator on the Metrics tab in real-time. 
+</blockquote><blockquote><img src="./06CreateModules_files/khan-counters.png" width="500px"> 
+</blockquote><p>We are done. In just 200 lines of code, we fully integrated Khan Academy Exercises into Course Builder. </p><h3><a name="Khan_Academy_Exercise_embed.js_File"></a>Khan Academy Exercise embed.js File<a href="https://code.google.com/p/course-builder/wiki/CreateModules#Khan_Academy_Exercise_embed.js_File" class="section_anchor"></a></h3><p>The runtime behind Khan Academy Exercises is undocumented and quite complex. The <tt>khan-exercises/embed.js</tt> script: </p><ul><li>embeds an iframe </li><li>an iframe handler returns content for the specific exercise definition HTML page </li><li>HTML page loads lots of JavaScript representing the crux of the Khan Academy Exercises framework </li><li>loaded script uses AJAX to fetch a visual template page into which an exercise is embedded visually </li><li>script combines an exercise definition with the visual template to create the final rendition. </li></ul><p></p><p>The variable <tt>EXERCISE_HTML_PAGE_RAW</tt> holds the visual template. The HTTP handler <tt>KhanExerciseRenderer</tt> serves both:  </p><ul><li>this visual template  </li><li>the exercise definition HTML files (after looking it up in the zip file). </li></ul><p></p><blockquote><img src="./06CreateModules_files/khan-cb.png" width="500px"> 
+</blockquote>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/course-builder/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="create_time" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="pagename" value="CreateModules">
+ <input type="hidden" name="token" value="APJNXfGK9w71H1BK1sD-I1edU1k:1396116929338">
+ </form>
+
+
+ <script src="./06CreateModules_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./06CreateModules_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./06CreateModules_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./06CreateModules_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><b class="categoryTitle projects" style="display: block;">Projects</b><div class="menuCategory projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><b class="categoryTitle starred_projects" style="display: block;">Starred projects</b><div class="menuCategory starred_projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="https://code.google.com/hosting/" style="display: block;">Find open source projects...</a><a class="menuItem" href="https://code.google.com/hosting/createProject" style="display: block;">Create a project...</a></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"><span class="menuText" style="display: block;"><b>mokter@gmail.com</b></span></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="http://www.google.com/accounts/AddSession?service=code&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FCreateModules" style="display: block;"><nobr>Sign in with another account...</nobr></a></div></div><div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"></div></div></body></html>

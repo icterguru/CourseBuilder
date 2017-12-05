@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://code.google.com/p/course-builder/wiki/UploadCode#Set_up_an_app-specific_password -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/course-builder/wiki/UploadCode">
+ 
+ <script src="./00Deploy to Google App Engine for the First Time_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./00Deploy to Google App Engine for the First Time_files/plusone.js" gapi_processed="true"></script><script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = "UoVM0pQUYCI3K2KKuTRAVW3lC8o:1396201233740";
+ 
+ 
+ var CS_env = {"assetVersionPath": "https://ssl.gstatic.com/codesite/ph/11512667522589661435", "projectHomeUrl": "/p/course-builder", "relativeBaseUrl": "", "loggedInUserEmail": "mokter@gmail.com", "profileUrl": "/u/114869294170070768630/", "projectName": "course-builder", "token": "UoVM0pQUYCI3K2KKuTRAVW3lC8o:1396201233740", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "domainName": null};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-34425937-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="./00Deploy to Google App Engine for the First Time_files/ga.js"></script>
+ 
+ 
+ <title>UploadCode - 
+ course-builder -
+ 
+ How to deploy your course code to Google production servers. - 
+ Course Builder - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./00Deploy to Google App Engine for the First Time_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./00Deploy to Google App Engine for the First Time_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/course-builder/gitchanges/basic?path=/UploadCode.wiki&repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/11512667522589661435/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+<script type="text/javascript" src="./00Deploy to Google App Engine for the First Time_files/sf_main.jsp"></script><script type="text/javascript" src="./00Deploy to Google App Engine for the First Time_files/client"></script><script type="text/javascript" id="jw_00" src="./00Deploy to Google App Engine for the First Time_files/affiliate_client.js"></script><style type="text/css">#er-wrap { background: #fff3e3; border-bottom:3px solid #ffe1b8; font-family: arial, sans-serif; font-size:14px; height: 225px; position: relative; width: 100%; }
+#er-discl{ bottom:10px; color:#000; font-size:11px; position: absolute; right: 15px; cursor: pointer; }
+#er-ad-discl { bottom: 10px; color: #ee8900; font-size: 11px; position: absolute;  left: 20px; }
+#er-header{ background: #fef7ee; border-bottom:1px solid #ffe1b8; color:#ee8900; height:24px; padding: 12px 12px 7px; text-align: right; }
+#er-header span{ font-weight: bold; float:left;}
+ul#er-nav{ display: inline-block; line-height:24px; height:24px; list-style:none; margin:0; padding:0; width:auto; vertical-align: middle;}
+ul#er-nav li{ display: inline-block; margin-left:10px; background: none; }
+ul#er-nav li a{ background: url(https://cdncache-a.akamaihd.net/items/db354/img/nav.png);display: block; height:24px; padding-bottom:6px; width: 24px;  }
+ul#er-nav li.er-search a{ background-position: 0 -6px; }
+ul#er-nav li.er-coupons a{ background-position: -24px -6px; }
+ul#er-nav li.er-pics a { background-position: -72px -6px; }
+ul#er-nav li.er-videos a { background-position: -96px -6px; }
+ul#er-nav li.er-wiki a { background-position: -120px -6px; }
+ul#er-nav li.er-products a{ background-position: -48px -6px; }
+ul#er-nav li.er-settings a{ background-position: -144px -6px; }
+ul#er-nav li.er-search a:hover, ul#er-nav li.er-search a.er-current{ border-color: #5799b8; background-position: 0 -36px; }
+ul#er-nav li.er-coupons a:hover, ul#er-nav li.er-coupons a.er-current{ border-color: #7e57b8; background-position: -24px -36px; }
+ul#er-nav li.er-pics a:hover, ul#er-nav li.er-pics a.er-current { border-color: #e2b105; background-position: -72px -36px; }
+ul#er-nav li.er-videos a:hover, ul#er-nav li.er-videos a.er-current { border-color: #df4b3e; background-position: -96px -36px; }
+ul#er-nav li.er-wiki a:hover, ul#er-nav li.er-wiki a.er-current { border-color: #000; background-position: -120px -36px; }
+ul#er-nav li.er-products a:hover, ul#er-nav li.er-products a.er-current{ border-color: #57b863; background-position: -48px -36px; }
+ul#er-nav li.er-settings a:hover, ul#er-nav li.er-settings a.er-current{ border-color: #5a5a5a; background-position: -144px -36px; }
+ul#er-nav li a.er-current{ border-bottom:3px solid #ccc; padding-bottom:3px;}
+#er-contentwrap{ padding:0px 20px; }
+#er-contentwrap .er-content{ display:none; }
+#er-contentwrap .er-content.er-search{ display:block; }
+#er-contentwrap .er-content.er-search .er-search-result { margin: 10px 0 15px; overflow: hidden; }
+#er-contentwrap .er-content.er-search .er-title a{ color:#2518B5; display:block;font-size:16px;text-decoration: underline;}
+#er-contentwrap .er-content.er-search .er-url{ color:#00802A; display: block; font-size:13px; overflow: hidden; text-overflow: ellipsis; width: 100%; height: 15px; }
+#er-contentwrap .er-content.er-search .er-desc{ display: block; font-size:13px; overflow: hidden; text-overflow: ellipsis; width: 100%; height: 30px;}
+#er-contentwrap .er-content.er-coupons { height:180px;  margin: -12px; overflow-x: scroll; overflow-y: hidden; width: 100%;}
+#er-contentwrap .er-content.er-coupons ul#er-couponlist { list-style: none; height:180px; margin:0; padding:0; width:auto; white-space: nowrap }
+#er-contentwrap .er-content.er-coupons ul#er-couponlist li { display:inline-block; height:75px; margin:10px; width:185px; }
+#er-contentwrap .er-content.er-coupons ul#er-couponlist li a { border:3px dashed #becccc; color:#006699; display: inline-block; font-size:12px; font-weight:bold; height:55px; padding:10px; text-decoration: none; white-space: normal; width:165px; }
+#er-contentwrap .er-content.er-coupons ul#er-couponlist li a:hover { background:#f8efe1; }
+#er-contentwrap .er-content.er-settings{ font-size:13px; }
+</style><script async="" type="text/javascript" src="./00Deploy to Google App Engine for the First Time_files/z7b85.js" id="_GPL_z7b85"></script><script async="" type="text/javascript" src="./00Deploy to Google App Engine for the First Time_files/js.php"></script></head>
+<body class="t6"><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="https://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div>
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/UploadCode#" id="multilogin-dropdown" onclick="return false;"><u><b>mokter@gmail.com</b></u> <small>▼</small></a>
+ 
+ 
+ | <a href="https://code.google.com/u/114869294170070768630/" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://code.google.com/u/114869294170070768630/" onclick="_CS_click(&#39;/gb/ph/profile&#39;);" title="Profile, Updates, and Settings"><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FUploadCode" onclick="_CS_click(&#39;/gb/ph/signout&#39;);"><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/course-builder">
+ <a href="https://code.google.com/p/course-builder/">
+ 
+ <img src="./00Deploy to Google App Engine for the First Time_files/defaultlogo.png" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/course-builder/"><span itemprop="name">course-builder</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/course-builder/"><span itemprop="description">Course Builder</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/course-builder/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/DownloadCourseBuilder?tm=2" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist?tm=6" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/issues/list" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/course-builder/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/course-builder/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5">&nbsp;My starred pages</option>
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off"></span>
+ 
+ 
+ 
+ <input type="submit" value="Search">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol" style="padding:0 3px 3px 0; margin:0">
+
+ 
+
+
+
+
+
+
+ 
+<style type="text/css">
+ #wikimaincol { padding-top: 6px; padding-left:1em}
+ #sidebarcontainer {
+ padding: 1.5em 2px 2px 2px;
+ min-width: 15em;
+ max-width: 20em;
+ overflow:hidden;
+}
+ .sidebartop ul { margin:0 0 0 .5em; padding-left:0 !important; list-style:none}
+ .sidebartop ul ul { margin-left:1em; padding-left:0; list-style:none; display:none}
+ .sidebartop li { margin:0 0 2px 0; padding:1px; padding-left:14px; cursor:pointer}
+ .sidebartop li a { padding:2px}
+ .sidebartop li { background: url(https://ssl.gstatic.com/codesite/ph/images/plus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeopen { background: url(https://ssl.gstatic.com/codesite/ph/images/minus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeleaf { background:none}
+ .currentpagelink { 
+ font-weight: bold;
+ text-decoration: none;
+ color: black !important; 
+ background: #c3d9ff;
+ }
+ .sidebartop ul.treeleafcontainer { display:block;}
+ .sidebarcontent { 
+ vertical-align:top;
+ padding-right: 3px;
+ border-right: 2px solid #ccc;
+ }
+</style>
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td class="sidebarcontent">
+ <div class="vt expand" id="wikisidebar">
+ <div>
+ 
+ <div style="float:right;">
+ <a class="ifExpand" style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/UploadCode#" onclick="_DW_toggleSidebar(this); return false;" title="Hide sidebar"><b>‹‹</b></a>
+ </div>
+ <div class="ifCollapse" style="padding:0 2px">
+ <a style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/course-builder/wiki/UploadCode#" onclick="_DW_toggleSidebar(this); return false;" title="Show sidebar"><b>››</b></a>
+ </div>
+ 
+ 
+ <div id="sidebarcontainer" class="sidebartop ifExpand">
+ <ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseBuilderChecklist">Course Builder Checklists</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CBRoles">Course Builder Roles</a> </li><li class="treeopen">Technologists   </li><ul class="treeleafcontainer"><li class="treeopen"><a href="https://code.google.com/p/course-builder/wiki/GetStarted">Get Started</a> </li><ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Download">Download the Software</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/GetCode">Run Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExplorePS">Explore Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/UploadCode" class="currentpagelink">Deploy Course Builder</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/ImplementCourseMaterial">Implement Course Material</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseSettings">Customize Course Settings</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Accessibility">Accessibility</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/I18n">Internationalization</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Dashboard">Dashboard</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateRegistration">Modify Registration</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateLessons">Create Lessons and Activities</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateAssessments">Create Assessments</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PeerReview">Peer Review</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/DeployAgain">Deploy Again</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AdminPage">Administrator Page</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateNewCourse">Create New Courses</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/URLMap">URL Mapping</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Security">Security</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/AppEngine">Develop with Google App Engine</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExportCourseData">Download Course Data</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ImportCourseData">Upload Course Data</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/Upgrade">Upgrade Course Builder</a> </li></ul><li>Course Authors </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/WhatsInACourse">Parts of a Course Builder Course</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CourseFlow">Course Flow for Students</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/DesignProcess">Design Process</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/PSHistory">About the Power Searching Experiment</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/OnePlan">Plan Before You Start</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/TwoDevelop">Develop the Content without Technology</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ObjectivesToOutline">From Objectives to Outline</a> </li></ul></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/WorkWithVideo">Work with Video</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/ThreeImplement">Implement the Course with Technology</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/FourPilot">Pilot with Your Target Audience</a> </li></ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/ManageCommunity">Set up &amp; Manage Community</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/Announcements">Announcements &amp; Optional Material</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/WebForums">Community Discussion</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CreateEmailList">Announcements-only Email List</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/UpdateAnnouncementsTab">Update Announcements Tab</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleEmails">Example Emails</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/OnlineOfficeHours">Online Office Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/TeachingAssistants">Teaching Assistants</a> </li><li><a href="https://docs.google.com/spreadsheet/ccc?key=0Arvsi5kPl6d8dGZkZDNCbEVNT1BGQ2dzWnlNczNsdEE" rel="nofollow">Example Event Timeline &amp; TA Hours</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleTAEssentialsDoc">Example TA Essentials Doc</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/CommunityToolsComparison">Tools Comparison</a> </li></ul><li><a href="https://code.google.com/p/course-builder/wiki/MeasureEfficacy">Evaluate Course Efficacy</a> </li><ul><li><a href="https://code.google.com/p/course-builder/wiki/AssessmentMetrics">Student Assessments</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ReachAndEngagementMetrics">Reach &amp; Engagement</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleReachEngagementMetrics">Example Reach &amp; Engagement Data</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/HappinessMetrics">Student Happiness</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/ExampleSurvey">Example Post-Course Survey</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/AnalyticsForEdu">Combine Assessment &amp; Reach Data</a> </li></ul></ul></ul><li>Developers </li><ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExploreCode">Explore Directories</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ModifyTemplate">Modify Course Template</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCB">Customize Course Builder</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ExtendCoursePages">Customize Course Pages</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateComponents">Create Components</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CreateModules">Create Modules</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/CustomJob">Create Custom Jobs</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ListOfModulesExtensions">List of Modules and Extensions</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/RunMultipleCourses">Arrange Courses on Disk</a> </li></ul><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/ReleaseNotes">Release Notes</a> </li><li class="treeleaf"><a href="https://code.google.com/p/course-builder/wiki/FAQ">FAQ</a> </li></ul><p></p><table class="wikitable"><tbody><tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://groups.google.com/forum/?fromgroups#!forum/course-builder-forum" rel="nofollow">Discussion forum</a> </td></tr> </tbody></table><p></p>
+ </div>
+ </div>
+</div>
+
+ </td>
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <img width="15" height="15" id="star_img" src="./00Deploy to Google App Engine for the First Time_files/star_off.gif" style="cursor:pointer" onclick="_CS_toggleStar(this,
+ {&#39;scope&#39;: &#39;wiki&#39;,
+ &#39;user&#39;: &#39;_CURRENT_USER&#39;,
+ &#39;item&#39;: &#39;course-builder:UploadCode&#39;
+ });">
+ 
+ <span style="font-size:120%;font-weight:bold">UploadCode</span>
+ &nbsp;
+ <div> 
+ 
+ <i>How to deploy your course code to Google production servers.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Thu Mar 20 17:42:44 2014">
+ Mar 20, 2014</span>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p></p><h1>Deploy to Google App Engine for the First Time </h1> <p></p><p></p><ul><ul><li><a href="https://code.google.com/p/course-builder/wiki/UploadCode#Register_your_Course_Builder_with_Google">Register your Course Builder with Google</a></li><li><a href="./00Deploy to Google App Engine for the First Time_files/00Deploy to Google App Engine for the First Time.htm">Set up an app-specific password</a></li><li><a href="https://code.google.com/p/course-builder/wiki/UploadCode#Upload_(or_deploy)_your_app">Upload (or deploy) your app</a></li><li><a href="https://code.google.com/p/course-builder/wiki/UploadCode#(Alternative)_Upload_without_a_password">(Alternative) Upload without a password</a></li><li><a href="https://code.google.com/p/course-builder/wiki/UploadCode#Set_Up_Security">Set Up Security</a></li></ul></ul> <p></p><p>As soon as you download Course Builder and can run the example course successfully, you should deploy to Google App Engine. After doing so, you create your courses in the browser and your data will be saved to Google App Engine's datastore. At that point, people can access your course from its default URL of <i><strong><tt>APP_ID</tt></strong></i><tt>.appspot.com</tt>, where  <i><strong><tt>APP_ID</tt></strong></i> is the app name you register <a href="https://code.google.com/p/course-builder/wiki/UploadCode#Register_your_app_with_Google">Register below</a>. </p><p>The first time you deploy your app, there are three steps: </p><ol><li><a href="https://code.google.com/p/course-builder/wiki/UploadCode#Register_your_app_(course)_with_Google">Register your app with Google.</a> </li><li><a href="./00Deploy to Google App Engine for the First Time_files/00Deploy to Google App Engine for the First Time.htm">Set up an app-specific password.</a> </li><li><a href="https://code.google.com/p/course-builder/wiki/UploadCode#Upload_(or_deploy)_your_app">Upload (or deploy) your app.</a> </li></ol><p>If need to redeploy Course Builder, follow the instructions in <a href="https://code.google.com/p/course-builder/wiki/DeployAgain">Subsequent Deployments to Google App Engine</a>. </p><p>This page talks about deploying your app to production, which is Google App Engine. When you deploy Course Builder to production, it is publicly available. You may decide that you want to test your application in production before making it publicly available. To do that, you'll need to follow the steps in <a href="https://code.google.com/p/course-builder/wiki/DeployAgain">Subsequent Deployments to Google App Engine</a>. </p><h2><a name="Register_your_Course_Builder_with_Google"></a>Register your Course Builder with Google<a href="https://code.google.com/p/course-builder/wiki/UploadCode#Register_your_Course_Builder_with_Google" class="section_anchor"></a></h2><p>Before you can deploy (or upload) an app like Course Builder to Google, you must register that app with Google by giving it a name. </p><p>When you register a name with Google, Google gives your app a domain name that corresponds to that name. Once registered and deployed, your course can be reached from almost anywhere on the Internet. The domain name Google uses is of the form <i><strong><tt>APP_ID</tt></strong></i><tt>.appspot.com</tt>, where <i><strong><tt>APP_ID</tt></strong></i> is the name you register.  </p><blockquote><b>Note about names:</b> You must choose a name that hasn't already been used by anybody else.  App ID names can only be used once and can never be returned to the pool of available names. Whether your app is running, not running, or deleted, once a name has been chosen, it can no longer be used by any other app.  
+</blockquote><p>To register your app: </p><ol><li>You must have a Google account to register a Google App Engine app. If you do not have a Google account, you can <a href="https://www.google.com/settings/account" rel="nofollow">create a Google account</a> with an email address and password. </li><li>Once you have a Google account, start registration of your app in one of two ways: </li><ul><li>From a web  browser, navigate to <a href="https://appengine.google.com/" rel="nofollow">https://appengine.google.com/</a> </li><li>From the Google App Engine Launcher, click on <strong>Dashboard</strong>. <br>Both of these get you to the same place. </li></ul><li>If you are not currently logged in to your Google account, you see a login screen. </li><li>Once you login, you see your GAE dashboard. If you've never worked on a GAE app, your dashboard looks as follows:<br> <img src="./00Deploy to Google App Engine for the First Time_files/dashboard.png"> </li><li>Click on <strong>Create Application</strong> and follow the instructions for verifying your account. After this process, you see the new application screen:<br> <img src="./00Deploy to Google App Engine for the First Time_files/new-application.png"> </li><li>To create a new application, follow the instructions to register an application ID, a name unique to this application. If you elect to use the free appspot.com domain name, the full URL for the application will be <tt>http://</tt><i><strong><tt>APP_ID</tt></strong></i><tt>.appspot.com/</tt>. You can also purchase a top-level domain name for your app, or use one that you have already registered. </li></ol><p><strong>Important:</strong> The app ID you register for your app <strong>must</strong> be the app ID in your <tt>app.yaml</tt> file; see <a href="https://code.google.com/p/course-builder/wiki/GetCode#2._Decide_on_a_name_for_your_app">Run the Sample App</a>. If you register a different ID than you use in development, you must change <tt>app.yaml</tt> before deploying your app. </p><p>Here is a video that shows these steps: <a href="http://www.youtube.com/watch?v=_xpnfrqjuKU&feature=share&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC" rel="nofollow">Register your app and edit the app.yaml file (1:58)</a>. </p><p>More details on creating an app can be found in the <a href="https://developers.google.com/appengine/docs/python/gettingstartedpython27/uploading" rel="nofollow">official docs</a>.  </p><h2><a name="Set_up_an_app-specific_password"></a>Set up an app-specific password<a href="./00Deploy to Google App Engine for the First Time_files/00Deploy to Google App Engine for the First Time.htm" class="section_anchor"></a></h2><p>Course Builder uses 2-step authentication to ensure the security of your courses. This means that to deploy your application, you do not provide the standard password that goes with your username. You instead supply a password that is specific to this application. See <a href="http://support.google.com/accounts/bin/answer.py?hl=en&answer=185833" rel="nofollow">Signing in using application-specific passwords</a> for information on how to create your app-specific password. </p><p>Make a note of the password you generate. You'll need to use it several times in the next step. You'll also need it in the future, if you make changes that you must upload. </p><h2><a name="Upload_(or_deploy)_your_app"></a>Upload (or deploy) your app<a href="https://code.google.com/p/course-builder/wiki/UploadCode#Upload_(or_deploy)_your_app" class="section_anchor"></a></h2><p>Once you register your app, the most straightforward way to deploy it is from a <a href="http://code.google.com/p/gcb-x-03141590/wiki/FAQ#What%27s_a_%22shell_or_command_prompt%22?" rel="nofollow">shell or command prompt</a>. From that window: </p><blockquote><tt>cd </tt><i><strong><tt>APPPATH</tt></strong></i><br> 
+<tt>appcfg.py update .</tt><br> 
+</blockquote><p>where <i><strong><tt>APPPATH</tt></strong></i> is the directory containing your app's code. <i>Note that the period at the end of the <tt>appcfg.py update</tt> command is necessary.</i> </p><p>For each <tt>appcfg.py</tt> command, you are asked to supply your credentials. Supply your username and the app-specific password you created in the <a href="./00Deploy to Google App Engine for the First Time_files/00Deploy to Google App Engine for the First Time.htm">previous step</a>. </p><p>It can take up to a minute to deploy your app; generally it's less than 30 seconds but usually not more than a minute. Once the deployment completes and confirms, you (and everyone else on the planet not blocked from Google) can visit <tt>http://</tt><i><strong><tt>APP_ID</tt></strong></i><tt>.appspot.com</tt> and verify that your app is indeed available to all. </p><p>Here is a video that shows this proces, from download to deployment: <a href="http://www.youtube.com/watch?v=OtVd1komyGY&list=PLbTy14-ZMIDJGS1XLdYj3Nzrhfd6EDWJC" rel="nofollow">download, installation, and deployment (4:33).</a> </p><h2><a name="(Alternative)_Upload_without_a_password"></a>(Alternative) Upload without a password<a href="https://code.google.com/p/course-builder/wiki/UploadCode#(Alternative)_Upload_without_a_password" class="section_anchor"></a></h2><p>In general, every time you make a change that causes you to redeploy your app to production, you either need to remember the app-specific password created when registering or you need a new app-specific password. In some situations, you may choose to avoid giving a password at all, by giving GAE access to your account.  </p><p>Before you choose to do so, please read <a href="https://developers.google.com/appengine/docs/python/tools/uploadinganapp#oauth" rel="nofollow">Passwordless Login with OAuth2</a>, so that you understand the risks involved. </p><p>To upload your application without supplying your credentials: </p><blockquote><tt>cd </tt><i><strong><tt>APPPATH</tt></strong></i><br> 
+<tt>appcfg.py --oauth2 update .</tt> 
+</blockquote><p>where <i><strong><tt>APPPATH</tt></strong></i> is the directory containing your app's code. <i>Note that the period at the end of the second command is necessary.</i> </p><p>Note that this works for the <tt>upload</tt> command. It <strong>does not</strong> work for the <tt>upload_data</tt> command. For this reason, if you upload changes to either <tt>data/lesson.csv</tt> or <tt>data/unit.csv</tt>, you must supply your app-specific password. </p><h2><a name="Set_Up_Security"></a>Set Up Security<a href="https://code.google.com/p/course-builder/wiki/UploadCode#Set_Up_Security" class="section_anchor"></a></h2><p>After you deploy our app but before anyone uses the course, you must change the default security setting. Course Builder implements protection against XSRF using transient user-action specific tokens for all state-modifying HTTP operations supported by the product. </p><p>To change the default token, go to <strong>Settings</strong> in the Administrator Page and change the value of <strong>gcb_xsrf_secret</strong>. See <a href="https://code.google.com/p/course-builder/wiki/AdminPage#Security">Security</a> for more information. </p><p></p><table class="wikitable"><tbody><tr><td style="border: 1px solid #ccc; padding: 5px;"> <a href="https://groups.google.com/forum/?fromgroups#!categories/course-builder-forum/customize-and-deploy-course-builder-code" rel="nofollow">Ask questions in the forum</a> </td></tr> </tbody></table><p></p>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/course-builder/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="create_time" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="pagename" value="UploadCode">
+ <input type="hidden" name="token" value="UoVM0pQUYCI3K2KKuTRAVW3lC8o:1396201233740">
+ </form>
+
+
+ <script src="./00Deploy to Google App Engine for the First Time_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./00Deploy to Google App Engine for the First Time_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./00Deploy to Google App Engine for the First Time_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./00Deploy to Google App Engine for the First Time_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><b class="categoryTitle projects" style="display: block;">Projects</b><div class="menuCategory projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><b class="categoryTitle starred_projects" style="display: block;">Starred projects</b><div class="menuCategory starred_projects"><a class="menuItem" href="https://code.google.com/p/cs-104-demo/" style="display: block;">cs-104-demo</a><a class="menuItem" href="https://code.google.com/p/mokter/" style="display: block;">mokter</a></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="https://code.google.com/hosting/" style="display: block;">Find open source projects...</a><a class="menuItem" href="https://code.google.com/hosting/createProject" style="display: block;">Create a project...</a></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"><span class="menuText" style="display: block;"><b>mokter@gmail.com</b></span></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="http://www.google.com/accounts/AddSession?service=code&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fcourse-builder%2Fwiki%2FUploadCode%23Set_up_an_app-specific_password" style="display: block;"><nobr>Sign in with another account...</nobr></a></div></div><script async="" src="./00Deploy to Google App Engine for the First Time_files/js(1).php"></script></body></html>
